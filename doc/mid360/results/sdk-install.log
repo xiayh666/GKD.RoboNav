@@ -1,0 +1,6 @@
+-- Install configuration: "Release"
+-- Installing: /usr/local/lib/liblivox_lidar_sdk_static.a
+-- Installing: /usr/local/include/livox_lidar_def.h
+-- Installing: /usr/local/include/livox_lidar_api.h
+-- Installing: /usr/local/include/livox_lidar_cfg.h
+-- Installing: /usr/local/lib/liblivox_lidar_sdk_shared.so

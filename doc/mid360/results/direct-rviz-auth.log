@@ -1,0 +1,43 @@
+[INFO] [launch]: All log files can be found below /home/ubuntu/.ros/log/2026-11-12-08-11-49-232003-ros2-jazzy-8441
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [livox_ros_driver2_node-1]: process started with pid [8444]
+[INFO] [rviz2-2]: process started with pid [8445]
+[livox_ros_driver2_node-1] [INFO] [1794471109.292955367] [livox_lidar_publisher]: Livox Ros Driver2 Version: 1.2.8
+[livox_ros_driver2_node-1] [INFO] [1794471109.293146575] [livox_lidar_publisher]: Data Source is raw lidar.
+[livox_ros_driver2_node-1] [INFO] [1794471109.293152331] [livox_lidar_publisher]: Config file : /workspace/GKD.RoboNav/install/gkd_nav_bringup/share/gkd_nav_bringup/config/MID360_config.json
+[livox_ros_driver2_node-1] LdsLidar *GetInstance
+[livox_ros_driver2_node-1] config lidar type: 8
+[livox_ros_driver2_node-1] successfully parse base config, counts: 1
+[livox_ros_driver2_node-1] [INFO] [1794471109.293932416] [livox_lidar_publisher]: Init lds lidar success!
+[rviz2-2] [INFO] [1794471109.560637171] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-2] [INFO] [1794471109.560720755] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-2] [INFO] [1794471109.587577098] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-2] [INFO] [1794471109.635418300] [rviz]: Subscribing to: /livox/lidar
+[rviz2-2] 
+[rviz2-2] [INFO] [1794471109.642393830] [rviz]: Subscribing to: /livox/lidar
+[rviz2-2] 
+[livox_ros_driver2_node-1] GetFreeIndex key:livox_lidar_51161280.
+[livox_ros_driver2_node-1] Init queue, real query size:16.
+[livox_ros_driver2_node-1] Lidar[0] storage queue size: 10
+[livox_ros_driver2_node-1] set pcl data type, handle: 51161280, data type: 1
+[livox_ros_driver2_node-1] set scan pattern, handle: 51161280, scan pattern: 0
+[livox_ros_driver2_node-1] begin to change work mode to 'Normal', handle: 51161280
+[livox_ros_driver2_node-1] successfully set data type, handle: 51161280, set_bit: 2
+[livox_ros_driver2_node-1] successfully set pattern mode, handle: 51161280, set_bit: 0
+[livox_ros_driver2_node-1] successfully set lidar attitude, ip: 192.168.12.3
+[livox_ros_driver2_node-1] successfully change work mode, handle: 51161280
+[livox_ros_driver2_node-1] successfully enable Livox Lidar imu, ip: 192.168.12.3
+[livox_ros_driver2_node-1] [INFO] [1794471112.294191766] [livox_lidar_publisher]: livox/imu publish use imu format
+[livox_ros_driver2_node-1] [INFO] [1794471112.295760830] [livox_lidar_publisher]: livox/lidar publish use PointCloud2 format
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [rviz2-2]: sending signal 'SIGINT' to process[rviz2-2]
+[INFO] [livox_ros_driver2_node-1]: sending signal 'SIGINT' to process[livox_ros_driver2_node-1]
+[rviz2-2] [INFO] [1794471114.039589146] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[livox_ros_driver2_node-1] [INFO] [1794471114.039598075] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[rviz2-2] [INFO] [1794471114.040893567] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[livox_ros_driver2_node-1] [INFO] [1794471114.040958480] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [rviz2-2]: process has finished cleanly [pid 8445]
+[livox_ros_driver2_node-1] Livox Lidar SDK Deinit completely!
+[livox_ros_driver2_node-1] lddc destory!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[livox_ros_driver2_node-1] lds destory!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[INFO] [livox_ros_driver2_node-1]: process has finished cleanly [pid 8444]

@@ -1,0 +1,84 @@
+Starting >>> livox_ros_driver2
+Starting >>> point_lio
+Starting >>> terrain_map
+--- stderr: terrain_map
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling crossbeam-utils v0.8.23
+   Compiling crossbeam-epoch v0.9.21
+   Compiling crossbeam-deque v0.8.8
+   Compiling rayon-core v1.13.0
+   Compiling either v1.19.0
+   Compiling pin-project-lite v0.2.17
+   Compiling map-updates v0.1.0 (/workspace/GKD.RoboNav/src/map_updates)
+   Compiling tokio v1.54.1
+   Compiling rayon v1.12.0
+   Compiling terrain-map v0.1.0 (/workspace/GKD.RoboNav/src/terrain_map)
+    Finished `release` profile [optimized] target(s) in 3.29s
+---
+Finished <<< terrain_map [3.40s]
+--- stderr: point_lio
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling autocfg v1.5.1
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.27
+   Compiling quote v1.0.47
+   Compiling paste v1.0.15
+   Compiling bytemuck v1.25.2
+   Compiling rawpointer v0.2.1
+   Compiling typenum v1.20.1
+   Compiling map-updates v0.1.0 (/workspace/GKD.RoboNav/src/map_updates)
+   Compiling safe_arch v0.7.4
+   Compiling num-traits v0.2.19
+   Compiling matrixmultiply v0.3.11
+   Compiling wide v0.7.33
+   Compiling syn v2.0.119
+   Compiling approx v0.5.1
+   Compiling num-integer v0.1.47
+   Compiling num-complex v0.4.6
+   Compiling num-rational v0.4.2
+   Compiling simba v0.9.1
+   Compiling nalgebra-macros v0.2.2
+   Compiling nalgebra v0.33.3
+   Compiling point-lio v0.1.0 (/workspace/GKD.RoboNav/src/point_lio)
+    Finished `release` profile [optimized] target(s) in 8.56s
+---
+Finished <<< point_lio [8.66s]
+--- stderr: livox_ros_driver2
+CMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  CMake variable FLANN_ROOT is set to:
+
+    /usr
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+  /opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+  /opt/ros/jazzy/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:67 (find_package)
+  CMakeLists.txt:225 (ament_auto_find_build_dependencies)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+/usr/include/apr-1.0
+apr-1
+/workspace/GKD.RoboNav/src/livox_ros_driver2/src/comm/pub_handler.cpp: In member function ‘void livox_ros::LidarPubHandler::ProcessDoubleEchoPoint(livox_ros::RawPacket&)’:
+/workspace/GKD.RoboNav/src/livox_ros_driver2/src/comm/pub_handler.cpp:466:12: warning: unused variable ‘index’ [-Wunused-variable]
+  466 |   uint32_t index = 0;
+      |            ^~~~~
+---
+Finished <<< livox_ros_driver2 [20.4s]
+Starting >>> gkd_nav_bringup
+Finished <<< gkd_nav_bringup [0.59s]
+
+Summary: 4 packages finished [21.2s]
+  3 packages had stderr output: livox_ros_driver2 point_lio terrain_map

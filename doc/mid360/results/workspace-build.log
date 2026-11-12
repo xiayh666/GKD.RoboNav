@@ -1,0 +1,29 @@
+Starting >>> livox_ros_driver2
+Finished <<< livox_ros_driver2 [0.38s]
+Starting >>> point_lio
+Finished <<< point_lio [0.19s]
+--- stderr: point_lio
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_TESTING
+
+
+    Finished `release` profile [optimized] target(s) in 0.05s
+---
+Starting >>> terrain_map
+--- stderr: terrain_map
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_TESTING
+
+
+    Finished `release` profile [optimized] target(s) in 0.02s
+---
+Finished <<< terrain_map [0.10s]
+Starting >>> gkd_nav_bringup
+Finished <<< gkd_nav_bringup [0.05s]
+
+Summary: 4 packages finished [0.88s]
+  2 packages had stderr output: point_lio terrain_map

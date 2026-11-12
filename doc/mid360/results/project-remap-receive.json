@@ -1,0 +1,21 @@
+{
+  "duration_s": 8.008444138999948,
+  "format": "custom",
+  "lidar_topic": "/mid360/lidar",
+  "imu_topic": "/mid360/imu",
+  "lidar_messages": 80,
+  "lidar_receive_hz": 10.003959203617558,
+  "imu_messages": 1594,
+  "imu_receive_hz": 199.9973135075221,
+  "imu_stamp_gap_s_max": 0.006590158,
+  "imu_stamp_gap_s_p50": 0.004965618,
+  "points_per_message_min": 19872,
+  "points_per_message_max": 20064,
+  "points_received": 1599648,
+  "pointcloud2_fields": [],
+  "offset_span_s_min": 0.098686297,
+  "offset_span_s_max": 0.100742189,
+  "imu_acceleration_norm_raw_p50": 0.99648777295097,
+  "errors": [],
+  "error_count": 0
+}

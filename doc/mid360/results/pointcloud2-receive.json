@@ -1,0 +1,27 @@
+{
+  "duration_s": 10.003516750000017,
+  "format": "pointcloud2",
+  "lidar_messages": 96,
+  "lidar_receive_hz": 9.907650188745423,
+  "imu_messages": 1932,
+  "imu_receive_hz": 200.18885652924496,
+  "imu_stamp_gap_s_max": 0.006347136,
+  "imu_stamp_gap_s_p50": 0.004909208,
+  "points_per_message_min": 19776,
+  "points_per_message_max": 20064,
+  "points_received": 1919904,
+  "pointcloud2_fields": [
+    "x",
+    "y",
+    "z",
+    "intensity",
+    "tag",
+    "line",
+    "timestamp"
+  ],
+  "offset_span_s_min": null,
+  "offset_span_s_max": null,
+  "imu_acceleration_norm_raw_p50": 0.9953019044722933,
+  "errors": [],
+  "error_count": 0
+}

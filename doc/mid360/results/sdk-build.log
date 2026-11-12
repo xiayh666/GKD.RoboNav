@@ -1,0 +1,918 @@
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- main project dir: /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2
+CMake Deprecation Warning at sdk_core/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at samples/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- main project dir: /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/samples
+CMake Deprecation Warning at samples/livox_lidar_quick_start/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at samples/multi_lidars_upgrade/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at samples/logger/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at samples/debug_point_cloud/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at samples/lidar_cmd_observer/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at samples/livox_lidar_rmc_time_sync/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at samples/livox_lidar_ip_set/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at samples/livox_lidar_info_get/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/GKD.RoboNav/build/livox-sdk2
+[  3%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/__/3rdparty/FastCRC/FastCRCsw.cpp.o
+[  2%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/device_manager.cpp.o
+[  2%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/device_manager.cpp.o
+[  4%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/__/3rdparty/FastCRC/FastCRCsw.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/device_manager.cpp:36:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/device_manager.cpp:36:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[  5%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/livox_lidar_sdk.cpp.o
+[  6%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/livox_lidar_sdk.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/livox_lidar_sdk.cpp:29:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/livox_lidar_sdk.cpp:29:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[  7%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/params_check.cpp.o
+[  8%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/params_check.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/params_check.cpp:30:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/params_check.cpp:30:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[  9%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/parse_cfg_file.cpp.o
+[ 10%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/parse_cfg_file.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/parse_cfg_file.cpp:25:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/parse_cfg_file.cpp:25:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[ 11%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/upgrade_manager.cpp.o
+[ 12%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/upgrade_manager.cpp.o
+[ 13%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/base/io_loop.cpp.o
+[ 15%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/base/io_loop.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/base/io_loop.cpp:30:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/base/io_loop.cpp:30:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[ 16%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/base/thread_base.cpp.o
+[ 17%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/base/thread_base.cpp.o
+[ 18%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/base/io_thread.cpp.o
+[ 19%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/base/io_thread.cpp.o
+[ 20%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/base/logging.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/base/logging.cpp:25:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[ 21%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/base/logging.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/base/logging.cpp:25:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[ 22%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/base/network/unix/network_util.cpp.o
+[ 23%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/base/network/unix/network_util.cpp.o
+[ 24%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/base/multiple_io/multiple_io_base.cpp.o
+[ 25%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/base/multiple_io/multiple_io_base.cpp.o
+[ 26%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/base/multiple_io/multiple_io_epoll.cpp.o
+[ 27%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/base/multiple_io/multiple_io_epoll.cpp.o
+[ 29%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/base/multiple_io/multiple_io_poll.cpp.o
+[ 30%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/base/multiple_io/multiple_io_poll.cpp.o
+[ 31%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/base/multiple_io/multiple_io_select.cpp.o
+[ 32%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/base/multiple_io/multiple_io_select.cpp.o
+[ 33%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/base/multiple_io/multiple_io_kqueue.cpp.o
+[ 34%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/base/multiple_io/multiple_io_kqueue.cpp.o
+[ 35%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/base/wake_up/unix/wake_up_pipe.cpp.o
+[ 36%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/base/wake_up/unix/wake_up_pipe.cpp.o
+[ 37%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/comm/comm_port.cpp.o
+[ 38%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/comm/comm_port.cpp.o
+[ 39%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/comm/sdk_protocol.cpp.o
+[ 40%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/comm/sdk_protocol.cpp.o
+[ 41%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/comm/generate_seq.cpp.o
+[ 43%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/comm/generate_seq.cpp.o
+[ 45%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/upgrade/firmware.cpp.o
+[ 45%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/upgrade/firmware.cpp.o
+[ 46%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/upgrade/livox_lidar_upgrader.cpp.o
+[ 47%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/upgrade/livox_lidar_upgrader.cpp.o
+[ 48%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/logger_handler/logger_manager.cpp.o
+[ 49%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/logger_handler/logger_manager.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/logger_handler/logger_manager.cpp:30:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/logger_handler/logger_manager.cpp:30:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[ 50%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/logger_handler/logger_handler.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/logger_handler/logger_handler.cpp:36:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[ 51%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/logger_handler/logger_handler.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/logger_handler/logger_handler.cpp:36:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[ 52%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/logger_handler/file_manager.cpp.o
+[ 53%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/data_handler/data_handler.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/logger_handler/file_manager.cpp:40:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/data_handler/data_handler.cpp:26:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[ 54%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/logger_handler/file_manager.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/logger_handler/file_manager.cpp:40:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[ 55%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/command_handler/command_impl.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./debug_point_cloud_handler/debug_point_cloud_handler.h:30,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./debug_point_cloud_handler/debug_point_cloud_manager.h:35,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/command_impl.cpp:29:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[ 56%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/command_handler/general_command_handler.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./debug_point_cloud_handler/debug_point_cloud_handler.h:30,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./debug_point_cloud_handler/debug_point_cloud_manager.h:35,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/general_command_handler.cpp:37:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[ 58%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/command_handler/hap_command_handler.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/hap_command_handler.cpp:30:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[ 59%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/data_handler/data_handler.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/data_handler/data_handler.cpp:26:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/stream.h:19,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/memorystream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/encodedstream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/document.h:26,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.h:38,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/hap_command_handler.cpp:37:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: note: did you mean ‘-Warray-bounds’?
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+[ 60%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/command_handler/mid360_command_handler.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/mid360_command_handler.cpp:30:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/stream.h:19,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/memorystream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/encodedstream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/document.h:26,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.h:38,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/mid360_command_handler.cpp:37:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: note: did you mean ‘-Warray-bounds’?
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+[ 61%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/command_handler/command_impl.cpp.o
+[ 62%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/command_handler/build_request.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./debug_point_cloud_handler/debug_point_cloud_handler.h:30,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./debug_point_cloud_handler/debug_point_cloud_manager.h:35,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/command_impl.cpp:29:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/build_request.cpp:33:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[ 63%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/command_handler/parse_lidar_state_info.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.cpp:3:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/stream.h:19,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/memorystream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/encodedstream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/document.h:26,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.h:38,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.cpp:2:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: note: did you mean ‘-Warray-bounds’?
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+[ 64%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/command_handler/mid360s_command_handler.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/mid360s_command_handler.cpp:30:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/stream.h:19,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/memorystream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/encodedstream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/document.h:26,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.h:38,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/mid360s_command_handler.cpp:37:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: note: did you mean ‘-Warray-bounds’?
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+[ 65%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/command_handler/avia2_command_handler.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/avia2_command_handler.cpp:30:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[ 66%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/command_handler/general_command_handler.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./debug_point_cloud_handler/debug_point_cloud_handler.h:30,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./debug_point_cloud_handler/debug_point_cloud_manager.h:35,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/general_command_handler.cpp:37:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/stream.h:19,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/memorystream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/encodedstream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/document.h:26,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.h:38,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/avia2_command_handler.cpp:37:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: note: did you mean ‘-Warray-bounds’?
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+[ 67%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/command_handler/mid360l_command_handler.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/mid360l_command_handler.cpp:30:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[ 68%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/debug_point_cloud_handler/debug_point_cloud_manager.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/debug_point_cloud_handler/debug_point_cloud_handler.h:30,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/debug_point_cloud_handler/debug_point_cloud_manager.h:35,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/debug_point_cloud_handler/debug_point_cloud_manager.cpp:1:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/stream.h:19,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/memorystream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/encodedstream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/document.h:26,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.h:38,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/mid360l_command_handler.cpp:37:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: note: did you mean ‘-Warray-bounds’?
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+[ 69%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_shared.dir/debug_point_cloud_handler/debug_point_cloud_handler.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/debug_point_cloud_handler/debug_point_cloud_handler.h:30,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/debug_point_cloud_handler/debug_point_cloud_handler.cpp:25:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[ 70%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/command_handler/hap_command_handler.cpp.o
+[ 72%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/command_handler/mid360_command_handler.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/hap_command_handler.cpp:30:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/mid360_command_handler.cpp:30:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[ 73%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/command_handler/build_request.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/build_request.cpp:33:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/stream.h:19,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/memorystream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/encodedstream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/document.h:26,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.h:38,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/hap_command_handler.cpp:37:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: note: did you mean ‘-Warray-bounds’?
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/stream.h:19,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/memorystream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/encodedstream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/document.h:26,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.h:38,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/mid360_command_handler.cpp:37:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: note: did you mean ‘-Warray-bounds’?
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+[ 74%] Linking CXX shared library liblivox_lidar_sdk_shared.so
+[ 74%] Built target livox_lidar_sdk_shared
+[ 75%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/command_handler/parse_lidar_state_info.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.cpp:3:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/stream.h:19,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/memorystream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/encodedstream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/document.h:26,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.h:38,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.cpp:2:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: note: did you mean ‘-Warray-bounds’?
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+[ 76%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/command_handler/mid360s_command_handler.cpp.o
+[ 77%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/command_handler/avia2_command_handler.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/mid360s_command_handler.cpp:30:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/avia2_command_handler.cpp:30:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[ 78%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/command_handler/mid360l_command_handler.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/mid360l_command_handler.cpp:30:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/stream.h:19,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/memorystream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/encodedstream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/document.h:26,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.h:38,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/mid360s_command_handler.cpp:37:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: note: did you mean ‘-Warray-bounds’?
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/stream.h:19,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/memorystream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/encodedstream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/document.h:26,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.h:38,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/avia2_command_handler.cpp:37:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: note: did you mean ‘-Warray-bounds’?
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/stream.h:19,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/memorystream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/encodedstream.h:22,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/document.h:26,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/parse_lidar_state_info.h:38,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/command_handler/mid360l_command_handler.cpp:37:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:542:29: note: did you mean ‘-Warray-bounds’?
+  542 | #define RAPIDJSON_PRAGMA(x) _Pragma(RAPIDJSON_STRINGIFY(x))
+      |                             ^~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:543:34: note: in expansion of macro ‘RAPIDJSON_PRAGMA’
+  543 | #define RAPIDJSON_DIAG_PRAGMA(x) RAPIDJSON_PRAGMA(GCC diagnostic x)
+      |                                  ^~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/rapidjson.h:545:3: note: in expansion of macro ‘RAPIDJSON_DIAG_PRAGMA’
+  545 |   RAPIDJSON_DIAG_PRAGMA(ignored RAPIDJSON_STRINGIFY(RAPIDJSON_JOIN(-W, x)))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/rapidjson/internal/dtoa.h:36:1: note: in expansion of macro ‘RAPIDJSON_DIAG_OFF’
+   36 | RAPIDJSON_DIAG_OFF(array - bounds)  // some gcc versions generate wrong warnings
+      | ^~~~~~~~~~~~~~~~~~
+[ 79%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/debug_point_cloud_handler/debug_point_cloud_manager.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/debug_point_cloud_handler/debug_point_cloud_handler.h:30,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/debug_point_cloud_handler/debug_point_cloud_manager.h:35,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/debug_point_cloud_handler/debug_point_cloud_manager.cpp:1:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[ 80%] Building CXX object sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/debug_point_cloud_handler/debug_point_cloud_handler.cpp.o
+In file included from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/fmt.h:21,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/common.h:28,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/spdlog.h:12,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/./base/logging.h:27,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/debug_point_cloud_handler/debug_point_cloud_handler.h:30,
+                 from /workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/debug_point_cloud_handler/debug_point_cloud_handler.cpp:25:
+/workspace/GKD.RoboNav/build/livox-vendor/Livox-SDK2/sdk_core/../3rdparty/spdlog/spdlog/fmt/bundled/format.h:407:6: warning: identifier ‘char8_t’ is a keyword in C++20 [-Wc++20-compat]
+  407 | enum char8_t: unsigned char {};
+      |      ^~~~~~~
+[ 81%] Linking CXX static library liblivox_lidar_sdk_static.a
+[ 81%] Built target livox_lidar_sdk_static
+[ 82%] Building CXX object samples/debug_point_cloud/CMakeFiles/debug_point_cloud.dir/main.cpp.o
+[ 83%] Building CXX object samples/livox_lidar_quick_start/CMakeFiles/livox_lidar_quick_start.dir/main.cpp.o
+[ 86%] Building CXX object samples/logger/CMakeFiles/logger.dir/main.cpp.o
+[ 86%] Building CXX object samples/multi_lidars_upgrade/CMakeFiles/multi_lidars_upgrade.dir/main.cpp.o
+[ 87%] Linking CXX executable livox_lidar_quick_start
+[ 88%] Linking CXX executable logger
+[ 89%] Linking CXX executable debug_point_cloud
+[ 90%] Linking CXX executable multi_lidars_upgrade
+[ 90%] Built target livox_lidar_quick_start
+[ 91%] Building CXX object samples/lidar_cmd_observer/CMakeFiles/lidar_cmd_observer.dir/main.cpp.o
+[ 91%] Built target logger
+[ 91%] Built target multi_lidars_upgrade
+[ 91%] Built target debug_point_cloud
+[ 92%] Building CXX object samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/main.cpp.o
+[ 94%] Building CXX object samples/livox_lidar_info_get/CMakeFiles/livox_lidar_info_get.dir/main.cpp.o
+[ 94%] Building CXX object samples/livox_lidar_ip_set/CMakeFiles/livox_lidar_ip_set.dir/main.cpp.o
+[ 95%] Linking CXX executable lidar_cmd_observer
+[ 96%] Linking CXX executable livox_lidar_ip_set
+[ 97%] Linking CXX executable livox_lidar_info_get
+[ 97%] Built target lidar_cmd_observer
+[ 98%] Building CXX object samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/linux/synchro.cpp.o
+[ 98%] Built target livox_lidar_ip_set
+[ 98%] Built target livox_lidar_info_get
+[100%] Linking CXX executable livox_lidar_rmc_time_sync
+[100%] Built target livox_lidar_rmc_time_sync

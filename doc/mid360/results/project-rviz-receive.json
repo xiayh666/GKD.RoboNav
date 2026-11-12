@@ -1,0 +1,29 @@
+{
+  "duration_s": 8.007350850999956,
+  "format": "pointcloud2",
+  "lidar_topic": "/livox/lidar",
+  "imu_topic": "/livox/imu",
+  "lidar_messages": 80,
+  "lidar_receive_hz": 10.000057916791283,
+  "imu_messages": 1596,
+  "imu_receive_hz": 199.9439873027931,
+  "imu_stamp_gap_s_max": 0.006604191,
+  "imu_stamp_gap_s_p50": 0.005083786,
+  "points_per_message_min": 19872,
+  "points_per_message_max": 20064,
+  "points_received": 1599648,
+  "pointcloud2_fields": [
+    "x",
+    "y",
+    "z",
+    "intensity",
+    "tag",
+    "line",
+    "timestamp"
+  ],
+  "offset_span_s_min": null,
+  "offset_span_s_max": null,
+  "imu_acceleration_norm_raw_p50": 0.9963449628655106,
+  "errors": [],
+  "error_count": 0
+}

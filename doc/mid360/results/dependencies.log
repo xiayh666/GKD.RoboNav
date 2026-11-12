@@ -1,0 +1,32 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libsctp-dev libsctp1
+Suggested packages:
+  lksctp-tools
+The following NEW packages will be installed:
+  libapr1-dev libsctp-dev libsctp1
+0 upgraded, 3 newly installed, 0 to remove and 468 not upgraded.
+Need to get 828 kB of archives.
+After this operation, 9977 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble/main amd64 libsctp1 amd64 1.0.19+dfsg-2build1 [9146 B]
+Get:2 http://archive.ubuntu.com/ubuntu noble/main amd64 libsctp-dev amd64 1.0.19+dfsg-2build1 [51.1 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libapr1-dev amd64 1.7.2-3.1ubuntu0.1 [768 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 828 kB in 2s (384 kB/s)
+Selecting previously unselected package libsctp1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 155378 files and directories currently installed.)
+Preparing to unpack .../libsctp1_1.0.19+dfsg-2build1_amd64.deb ...
+Unpacking libsctp1:amd64 (1.0.19+dfsg-2build1) ...
+Selecting previously unselected package libsctp-dev:amd64.
+Preparing to unpack .../libsctp-dev_1.0.19+dfsg-2build1_amd64.deb ...
+Unpacking libsctp-dev:amd64 (1.0.19+dfsg-2build1) ...
+Selecting previously unselected package libapr1-dev.
+Preparing to unpack .../libapr1-dev_1.7.2-3.1ubuntu0.1_amd64.deb ...
+Unpacking libapr1-dev (1.7.2-3.1ubuntu0.1) ...
+Setting up libsctp1:amd64 (1.0.19+dfsg-2build1) ...
+Setting up libsctp-dev:amd64 (1.0.19+dfsg-2build1) ...
+Setting up libapr1-dev (1.7.2-3.1ubuntu0.1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.8) ...

@@ -1,0 +1,42 @@
+[INFO] [launch]: All log files can be found below /home/ubuntu/.ros/log/2026-11-12-08-10-08-515899-ros2-jazzy-7979
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [livox_ros_driver2_node-1]: process started with pid [8006]
+[INFO] [rviz2-2]: process started with pid [8007]
+[livox_ros_driver2_node-1] [INFO] [1794471008.575015875] [livox_lidar_publisher]: Livox Ros Driver2 Version: 1.2.8
+[livox_ros_driver2_node-1] [INFO] [1794471008.575198842] [livox_lidar_publisher]: Data Source is raw lidar.
+[livox_ros_driver2_node-1] [INFO] [1794471008.575204327] [livox_lidar_publisher]: Config file : /workspace/GKD.RoboNav/install/gkd_nav_bringup/share/gkd_nav_bringup/config/MID360_config.json
+[livox_ros_driver2_node-1] LdsLidar *GetInstance
+[livox_ros_driver2_node-1] config lidar type: 8
+[livox_ros_driver2_node-1] successfully parse base config, counts: 1
+[livox_ros_driver2_node-1] [INFO] [1794471008.576008940] [livox_lidar_publisher]: Init lds lidar success!
+[rviz2-2] [INFO] [1794471008.898377945] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-2] [INFO] [1794471008.898442626] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-2] [INFO] [1794471008.920794821] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-2] [INFO] [1794471008.971086423] [rviz]: Subscribing to: /livox/lidar
+[rviz2-2] 
+[rviz2-2] [INFO] [1794471008.976441594] [rviz]: Subscribing to: /livox/lidar
+[rviz2-2] 
+[livox_ros_driver2_node-1] GetFreeIndex key:livox_lidar_51161280.
+[livox_ros_driver2_node-1] Init queue, real query size:16.
+[livox_ros_driver2_node-1] Lidar[0] storage queue size: 10
+[livox_ros_driver2_node-1] set pcl data type, handle: 51161280, data type: 1
+[livox_ros_driver2_node-1] set scan pattern, handle: 51161280, scan pattern: 0
+[livox_ros_driver2_node-1] begin to change work mode to 'Normal', handle: 51161280
+[livox_ros_driver2_node-1] successfully set data type, handle: 51161280, set_bit: 2
+[livox_ros_driver2_node-1] successfully set pattern mode, handle: 51161280, set_bit: 0
+[livox_ros_driver2_node-1] successfully set lidar attitude, ip: 192.168.12.3
+[livox_ros_driver2_node-1] successfully change work mode, handle: 51161280
+[livox_ros_driver2_node-1] successfully enable Livox Lidar imu, ip: 192.168.12.3
+[livox_ros_driver2_node-1] [INFO] [1794471011.576218677] [livox_lidar_publisher]: livox/imu publish use imu format
+[livox_ros_driver2_node-1] [INFO] [1794471011.577785438] [livox_lidar_publisher]: livox/lidar publish use PointCloud2 format
+[INFO] [rviz2-2]: process has finished cleanly [pid 8007]
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [livox_ros_driver2_node-1]: sending signal 'SIGINT' to process[livox_ros_driver2_node-1]
+[livox_ros_driver2_node-1] [INFO] [1794471108.687768851] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ERROR] [livox_ros_driver2_node-1]: process[livox_ros_driver2_node-1] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+[INFO] [livox_ros_driver2_node-1]: sending signal 'SIGTERM' to process[livox_ros_driver2_node-1]
+[livox_ros_driver2_node-1] [INFO] [1794471113.693134677] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ERROR] [livox_ros_driver2_node-1]: process[livox_ros_driver2_node-1] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+[INFO] [livox_ros_driver2_node-1]: sending signal 'SIGKILL' to process[livox_ros_driver2_node-1]
+[ERROR] [livox_ros_driver2_node-1]: process has died [pid 8006, exit code -9, cmd '/workspace/GKD.RoboNav/install/livox_ros_driver2/lib/livox_ros_driver2/livox_ros_driver2_node --ros-args -r __node:=livox_lidar_publisher --params-file /tmp/launch_params_n3c4qe4m -r livox/lidar:=/livox/lidar -r livox/imu:=/livox/imu'].
+tools/view_mid360.sh: line 22: y: command not found

@@ -1,0 +1,43 @@
+/workspace/GKD.RoboNav/install/gkd_nav_bringup
+Arguments (pass arguments as '<name>:=<value>'):
+
+    'config':
+        MID-360 device and host network configuration
+        (default: PathJoinSubstitution(''/workspace/GKD.RoboNav/install/gkd_nav_bringup/share/gkd_nav_bringup', 'config', 'MID360_config.json''))
+
+    'xfer_format':
+        0: PointCloud2; 1: Livox CustomMsg. Valid choices are: ['0', '1']
+        (default: '1')
+
+    'publish_freq':
+        no description given
+        (default: '10.0')
+
+    'lidar_topic':
+        no description given
+        (default: '/livox/lidar')
+
+    'imu_topic':
+        no description given
+        (default: '/livox/imu')
+Arguments (pass arguments as '<name>:=<value>'):
+
+    'config':
+        no description given
+        (default: PathJoinSubstitution(''/workspace/GKD.RoboNav/install/gkd_nav_bringup/share/gkd_nav_bringup', 'config', 'MID360_config.json''))
+
+    'publish_freq':
+        no description given
+        (default: '10.0')
+
+    'lidar_topic':
+        no description given
+        (default: '/livox/lidar')
+
+    'imu_topic':
+        no description given
+        (default: '/livox/imu')
+
+    'xfer_format':
+        0: PointCloud2; 1: Livox CustomMsg. Valid choices are: ['0', '1']
+        (default: '1')
