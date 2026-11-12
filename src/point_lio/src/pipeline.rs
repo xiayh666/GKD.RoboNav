@@ -1,8 +1,9 @@
 use crate::{
     filter::Filter, map::VoxelMap, Config, Covariance, Error, ImuSample, Scan, ScanResult, State,
 };
+use map_updates::{Observation, ObservationBatch, ObservationReset, Pose, SessionId};
 use nalgebra::Vector3;
-use std::collections::VecDeque;
+use std::{collections::VecDeque, sync::Arc};
 
 /// An independent estimator. Call sequentially, or protect the whole instance
 /// with a caller-owned mutex. No global state or background threads.
@@ -14,10 +15,17 @@ pub struct PointLio {
     last_imu_time: Option<f64>,
     map: VoxelMap,
     initial_map_points: Vec<Vector3<f64>>,
+    session: SessionId,
+    sequence: u64,
 }
 
 impl PointLio {
     pub fn new(config: Config) -> Result<Self, Error> {
+        Self::new_with_source(config, 0)
+    }
+
+    /// Assign distinct source IDs when multiple estimators feed consumers.
+    pub fn new_with_source(config: Config, source: u64) -> Result<Self, Error> {
         config.validate()?;
         Ok(Self {
             map: VoxelMap::new(config.voxel_size, config.map_capacity),
@@ -27,7 +35,21 @@ impl PointLio {
             imu: VecDeque::new(),
             last_imu_time: None,
             initial_map_points: Vec::new(),
+            session: SessionId { source, epoch: 0 },
+            sequence: 0,
         })
+    }
+
+    /// Explicit late-join/resync boundary; does not reset filter or iVox.
+    /// Call and deliver before the next process_scan, in the same producer order.
+    pub fn observation_reset(&self) -> ObservationReset {
+        ObservationReset {
+            session: self.session,
+            next_sequence: self
+                .sequence
+                .checked_add(1)
+                .expect("observation sequence exhausted"),
+        }
     }
 
     pub fn state(&self) -> Option<&State> {
@@ -49,6 +71,12 @@ impl PointLio {
 
     /// Reset all state and map; required after a sensor clock restart.
     pub fn reset(&mut self) {
+        self.session.epoch = self
+            .session
+            .epoch
+            .checked_add(1)
+            .expect("observation epoch exhausted");
+        self.sequence = 0;
         self.filter = None;
         self.initialization.clear();
         self.imu.clear();
@@ -195,6 +223,7 @@ impl PointLio {
         let mut rejected = 0;
         let mut matched = 0;
         let mut world_points = Vec::with_capacity(points.len());
+        let mut observed_points = Vec::with_capacity(points.len());
         let mut neighbors = Vec::with_capacity(points.len());
         let mut index = 0;
         while index < points.len() {
@@ -223,10 +252,42 @@ impl PointLio {
             }
             matched += next.observe_planes(&observations, &self.config)?;
             for point in group {
-                world_points.push(next.state.lidar_point_to_world(&point.position));
+                let world = next.state.lidar_point_to_world(&point.position);
+                let origin = next.state.lidar_point_to_world(&Vector3::zeros());
+                observed_points.push(Observation {
+                    time: scan.start_time + point.offset,
+                    origin: [origin.x, origin.y, origin.z],
+                    endpoint: [world.x, world.y, world.z],
+                });
+                world_points.push(world);
             }
         }
         self.advance(&mut next, scan.end_time, &mut consumed, &mut rejected)?;
+        // Build from every accepted observation BEFORE MapIncremental filtering.
+        // This does not expose cache evictions as environment deletions.
+        let observations = Arc::new(
+            ObservationBatch::from_points(
+                self.observation_reset(),
+                scan.start_time,
+                scan.end_time,
+                Pose {
+                    position: [
+                        next.state.position.x,
+                        next.state.position.y,
+                        next.state.position.z,
+                    ],
+                    orientation: [
+                        next.state.orientation.i,
+                        next.state.orientation.j,
+                        next.state.orientation.k,
+                        next.state.orientation.w,
+                    ],
+                },
+                self.config.voxel_size,
+                observed_points,
+            )
+            .map_err(|_| Error::InvalidScan)?,
+        );
         if self.map.voxels() == 0 {
             self.initial_map_points.extend_from_slice(&world_points);
             if self.initial_map_points.len() >= self.config.initial_map_min_points {
@@ -247,7 +308,9 @@ impl PointLio {
             map_points: self.map.len(),
             map_voxels: self.map.voxels(),
             rejected_saturated_axes: rejected,
+            observations: Arc::clone(&observations),
         };
+        self.sequence = observations.sequence;
         self.filter = Some(next);
         Ok(result)
     }

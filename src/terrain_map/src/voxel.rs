@@ -256,7 +256,7 @@ fn block_inside(key: VoxelKey, center: Point3, c: &Config) -> bool {
     (0..3).all(|i| (p[i] - center[i]).abs() <= c.half_extent[i] + 4. * c.resolution)
 }
 fn validate_frame(f: &Frame, c: &Config) -> Result<(), Error> {
-    if !f.time.is_finite() || f.time < 0. || f.rays.len() > c.max_points {
+    if !f.time.is_finite() || f.rays.len() > c.max_points {
         return Err(Error::InvalidFrame);
     }
     key(f.center, c.resolution)?;

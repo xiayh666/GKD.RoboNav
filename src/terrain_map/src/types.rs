@@ -32,6 +32,10 @@ pub struct Config {
     pub input_capacity: usize,
     /// Private Rayon pool, never the global pool. Frames commit sequentially.
     pub cpu_threads: usize,
+    pub max_surface_voxels: usize,
+    pub max_surface_samples_per_voxel: usize,
+    /// Optional ray evidence alongside producer-keyed geometry. Default off.
+    pub integrate_observation_rays: bool,
 }
 
 impl Default for Config {
@@ -47,6 +51,9 @@ impl Default for Config {
             max_update_voxels: 1_000_000,
             input_capacity: 2,
             cpu_threads: 2,
+            max_surface_voxels: 200_000,
+            max_surface_samples_per_voxel: 256,
+            integrate_observation_rays: false,
         }
     }
 }
@@ -64,6 +71,8 @@ impl Config {
                 self.max_update_voxels,
                 self.input_capacity,
                 self.cpu_threads,
+                self.max_surface_voxels,
+                self.max_surface_samples_per_voxel,
             ]
             .contains(&0)
             || self.cpu_threads > 64
@@ -79,6 +88,13 @@ impl Config {
 pub enum Error {
     InvalidConfig,
     InvalidFrame,
+    InvalidUpdate,
+    AwaitingReset,
+    SessionMismatch,
+    OutOfOrder,
+    SequenceGap { expected: u64, received: u64 },
+    NeedsReset,
+    MixedInput,
     NonMonotonicTime,
     Capacity,
     InvalidAnnotation,

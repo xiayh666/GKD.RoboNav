@@ -1,4 +1,5 @@
 use crate::{Annotation, Config, Error, Frame, MapSnapshot, Mapper};
+use map_updates::{MapUpdate, SessionId};
 use std::sync::Arc;
 use tokio::sync::{mpsc, oneshot, watch};
 use tokio::task::JoinHandle;
@@ -6,8 +7,9 @@ use tokio::task::JoinHandle;
 type Reply = oneshot::Sender<Result<Arc<MapSnapshot>, Error>>;
 enum Operation {
     Frame(Frame),
-    Upsert(Annotation),
-    Remove(u64),
+    Update(MapUpdate),
+    Upsert(Option<SessionId>, Annotation),
+    Remove(Option<SessionId>, u64),
 }
 enum Command {
     Apply(Operation, Reply),
@@ -26,6 +28,12 @@ impl Receipt {
 pub struct RejectedFrame {
     pub error: Error,
     pub frame: Frame,
+}
+
+#[derive(Debug)]
+pub struct RejectedUpdate {
+    pub error: Error,
+    pub update: MapUpdate,
 }
 
 #[derive(Clone)]
@@ -85,15 +93,77 @@ impl MapHandle {
             }),
         }
     }
+    /// Main producer path. Arc-backed observation payloads move without cloud copies.
+    pub fn try_submit_update(&self, update: MapUpdate) -> Result<Receipt, RejectedUpdate> {
+        if matches!(&update,MapUpdate::Observations(b) if b.point_count()>self.max_points) {
+            return Err(RejectedUpdate {
+                error: Error::Capacity,
+                update,
+            });
+        }
+        match self.tx.try_reserve() {
+            Ok(permit) => {
+                let (tx, rx) = oneshot::channel();
+                permit.send(Command::Apply(Operation::Update(update), tx));
+                Ok(Receipt(rx))
+            }
+            Err(e) => Err(RejectedUpdate {
+                error: if matches!(e, mpsc::error::TrySendError::Full(_)) {
+                    Error::Busy
+                } else {
+                    Error::Closed
+                },
+                update,
+            }),
+        }
+    }
+    pub async fn submit_update(&self, update: MapUpdate) -> Result<Receipt, RejectedUpdate> {
+        if matches!(&update,MapUpdate::Observations(b) if b.point_count()>self.max_points) {
+            return Err(RejectedUpdate {
+                error: Error::Capacity,
+                update,
+            });
+        }
+        match self.tx.reserve().await {
+            Ok(permit) => {
+                let (tx, rx) = oneshot::channel();
+                permit.send(Command::Apply(Operation::Update(update), tx));
+                Ok(Receipt(rx))
+            }
+            Err(_) => Err(RejectedUpdate {
+                error: Error::Closed,
+                update,
+            }),
+        }
+    }
     pub async fn upsert_annotation(
         &self,
         annotation: Annotation,
     ) -> Result<Arc<MapSnapshot>, Error> {
         annotation.validate()?;
-        self.request(Operation::Upsert(annotation)).await
+        let session = self.latest().surfaces.session;
+        self.request(Operation::Upsert(session, annotation)).await
     }
     pub async fn remove_annotation(&self, id: u64) -> Result<Arc<MapSnapshot>, Error> {
-        self.request(Operation::Remove(id)).await
+        let session = self.latest().surfaces.session;
+        self.request(Operation::Remove(session, id)).await
+    }
+    /// Bind a UI command to the coordinate session of the displayed snapshot.
+    pub async fn upsert_annotation_in_session(
+        &self,
+        session: SessionId,
+        annotation: Annotation,
+    ) -> Result<Arc<MapSnapshot>, Error> {
+        annotation.validate()?;
+        self.request(Operation::Upsert(Some(session), annotation))
+            .await
+    }
+    pub async fn remove_annotation_in_session(
+        &self,
+        session: SessionId,
+        id: u64,
+    ) -> Result<Arc<MapSnapshot>, Error> {
+        self.request(Operation::Remove(Some(session), id)).await
     }
     async fn request(&self, operation: Operation) -> Result<Arc<MapSnapshot>, Error> {
         let (tx, rx) = oneshot::channel();
@@ -130,19 +200,30 @@ impl TerrainRuntime {
                 match command {
                     Command::Shutdown => rx.close(),
                     Command::Apply(operation, reply) => {
-                        let (returned, result) = tokio::task::spawn_blocking(move || {
-                            let result = match operation {
-                                Operation::Frame(frame) => mapper.update(&frame),
-                                Operation::Upsert(a) => mapper.upsert_annotation(a),
-                                Operation::Remove(id) => mapper.remove_annotation(id),
-                            };
-                            (mapper, result)
-                        })
-                        .await
-                        .map_err(|e| Error::Worker(e.to_string()))?;
+                        let (returned, result, published) =
+                            tokio::task::spawn_blocking(move || {
+                                let result = match operation {
+                                    Operation::Frame(frame) => mapper.update(&frame),
+                                    Operation::Update(update) => mapper.apply_update(&update),
+                                    Operation::Upsert(session, a) => {
+                                        mapper.upsert_annotation_for(session, a)
+                                    }
+                                    Operation::Remove(session, id) => {
+                                        mapper.remove_annotation_for(session, id)
+                                    }
+                                };
+                                let published = match &result {
+                                    Ok(snapshot) => Some(Arc::clone(snapshot)),
+                                    Err(Error::SequenceGap { .. }) => Some(mapper.snapshot()),
+                                    _ => None,
+                                };
+                                (mapper, result, published)
+                            })
+                            .await
+                            .map_err(|e| Error::Worker(e.to_string()))?;
                         mapper = returned;
-                        if let Ok(snapshot) = &result {
-                            output.send_replace(Arc::clone(snapshot));
+                        if let Some(snapshot) = published {
+                            output.send_replace(snapshot);
                         }
                         let _ = reply.send(result);
                     }

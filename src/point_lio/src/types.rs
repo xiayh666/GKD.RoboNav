@@ -33,6 +33,8 @@ pub struct ScanResult {
     pub covariance: crate::Covariance,
     /// Each accepted return transformed using its own acquisition-time pose.
     pub world_points: Vec<Vector3<f64>>,
+    /// All range-accepted returns grouped before localization-map thinning.
+    pub observations: std::sync::Arc<map_updates::ObservationBatch>,
     pub matched_points: usize,
     /// Actual stored returns; multiple points may share a voxel.
     pub map_points: usize,

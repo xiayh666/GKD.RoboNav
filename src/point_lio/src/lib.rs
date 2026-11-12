@@ -13,3 +13,6 @@ pub use filter::{Covariance, State, STATE_DIM};
 pub use nalgebra::{UnitQuaternion, Vector3};
 pub use pipeline::PointLio;
 pub use types::{Config, Error, ImuSample, LidarPoint, Scan, ScanResult};
+
+/// Shared output protocol; independent of nalgebra, ROS and filter internals.
+pub use map_updates;

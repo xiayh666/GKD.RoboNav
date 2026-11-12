@@ -1,0 +1,83 @@
+   Compiling terrain-map v0.1.0 (/workspace/GKD.RoboNav/src/terrain_map)
+    Finished `release` profile [optimized] target(s) in 1.38s
+     Running unittests src/lib.rs (build/ros2/terrain_map/cargo/release/deps/map_updates-6070c8cffbc21117)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/protocol.rs (build/ros2/terrain_map/cargo/release/deps/protocol-7fe04e5c4eb418e7)
+
+running 2 tests
+test rejects_invalid_coordinates_times_and_pose ... ok
+test groups_negative_coordinates_and_preserves_reobservations ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (build/ros2/terrain_map/cargo/release/deps/terrain_map-69b4263482025e48)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/lio_connection.rs (build/ros2/terrain_map/cargo/release/deps/lio_connection-8fb7dd03269f1b36)
+
+running 3 tests
+test acquisition_origins_include_extrinsics_and_motion ... ok
+test real_ivox_eviction_does_not_remove_terrain_geometry ... ok
+test repeated_scans_emit_observations_even_without_map_growth ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/mapping.rs (build/ros2/terrain_map/cargo/release/deps/mapping-cbb0a218f33ee6f3)
+
+running 9 tests
+test aging_and_local_window_prune_observations ... ok
+test manual_annotations_are_distinct_from_detection ... ok
+test negative_endpoint_on_grid_boundary_terminates ... ok
+test range_limit_does_not_create_a_hit ... ok
+test snapshots_are_immutable_and_free_observations_clear_old_hits ... ok
+test stale_cell_inside_live_block_is_unknown ... ok
+test ray_evidence_unknown_negative_and_diagonal ... ok
+test rejected_updates_preserve_version_and_state ... ok
+test parallel_updates_equal_serial_with_hit_precedence ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/observations.rs (build/ros2/terrain_map/cargo/release/deps/observations-51cebe3fd9d6ef20)
+
+running 9 tests
+test consumes_grouped_geometry_without_revoxelizing_or_ray_mapping ... ok
+test gap_invalidates_geometry_until_explicit_resync ... ok
+test invalid_and_over_budget_batches_are_transactional ... ok
+test repeated_observations_are_retained_independently_of_cache_changes ... ok
+test retired_source_reset_cannot_roll_back_current_session ... ok
+test session_reset_invalidates_old_coordinates_and_annotations ... ok
+test async_stream_publishes_gap_health_and_preserves_retry_payload ... ok
+test surface_expiration_and_optional_free_space ... ok
+test queued_annotation_is_bound_to_its_displayed_session ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/runtime.rs (build/ros2/terrain_map/cargo/release/deps/runtime-8d026963bc1763d0)
+
+running 4 tests
+test start_requires_caller_runtime ... ok
+test dropped_receipts_and_slow_subscribers_do_not_lose_commits ... ok
+test bounded_admission_returns_input_and_shutdown_drains ... ok
+test async_commit_annotation_and_shutdown ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests map_updates
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests terrain_map
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

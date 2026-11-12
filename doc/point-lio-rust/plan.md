@@ -19,3 +19,5 @@
 | T10 | 通过普通 CMake 接入 colcon 构建 | codex | src/point_lio/CMakeLists.txt, README, 文档 | completed | T9 | colcon识别cmake，Release库构建成功，增量Cargo 0.01s，Cargo失败返回非零 |
 
 | T11 | 在实际 ros2 容器验证统一构建 | codex | CMakeLists.txt, README, 文档 | completed | T10 | ros2容器内首次及增量全工程构建均成功，2 packages finished；Rust 1.99.1 |
+
+| T12 | 导出筛点前的体素观测协议 | codex | pipeline.rs, types.rs, map_updates, 连接回归 | completed | T11 | 21核心/融合回归通过；4场景CSV字节一致；filter/map未改，见doc/terrain-map/observation-interface.md |

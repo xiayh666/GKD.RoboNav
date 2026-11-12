@@ -1,0 +1,5 @@
+    Finished `release` profile [optimized] target(s) in 0.01s
+     Running `build/ros2/terrain_map/cargo/release/examples/lio_connection`
+sequence=1, ivox_voxels=5, terrain_voxels=49, status=Ready
+sequence=2, ivox_voxels=5, terrain_voxels=91, status=Ready
+sequence=3, ivox_voxels=5, terrain_voxels=133, status=Ready

@@ -7,3 +7,8 @@
 | T2 | 体素核心与异步并行运行层 | codex | src/terrain_map, Cargo.lock, 文档 | completed | T1 | 13项测试宿主与容器均通过；fmt/clippy通过；3包colcon构建通过；1/2/4线程耗时留档validation.md |
 
 T2范围：同步体素核心、帧内Rayon并行、Tokio有界输入/命令/快照/关闭。几何、隧道及通行性在后续阶段实现，不以占位结论替代分析。
+
+| T3 | 接通Point-LIO观测体素增量 | codex | src/map_updates, src/point_lio, src/terrain_map, 文档 | completed | T2 | 48项相关回归通过；4场景回放字节一致；容器27项协议/地形回归及3包构建通过；证据observation-interface.md |
+
+
+T4已按用户要求停止：已完成的链路/持续/隔离/背压/窗口数据保存在results/chain-stress；默认20万格容量例程尚未执行，完整压力验收未完成。不要自动继续。

@@ -1,0 +1,21 @@
+Starting >>> gkd_nav_bringup
+Starting >>> point_lio
+Starting >>> terrain_map
+Finished <<< gkd_nav_bringup [0.18s]
+--- stderr: point_lio
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Finished `release` profile [optimized] target(s) in 0.06s
+---
+Finished <<< point_lio [0.31s]
+--- stderr: terrain_map
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling terrain-map v0.1.0 (/workspace/GKD.RoboNav/src/terrain_map)
+    Finished `release` profile [optimized] target(s) in 0.93s
+---
+Finished <<< terrain_map [1.15s]
+
+Summary: 3 packages finished [1.41s]
+  2 packages had stderr output: point_lio terrain_map

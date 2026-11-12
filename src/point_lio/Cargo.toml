@@ -7,4 +7,5 @@ license = "BSD-3-Clause"
 description = "ROS-independent Rust implementation of Point-LIO's output-state filter"
 
 [dependencies]
+map-updates = { path = "../map_updates" }
 nalgebra = "0.33"

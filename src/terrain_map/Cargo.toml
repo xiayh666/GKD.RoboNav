@@ -7,8 +7,10 @@ license = "BSD-3-Clause"
 description = "ROS-independent terrain mapping and analysis library"
 
 [dependencies]
+map-updates = { path = "../map_updates" }
 rayon = "1.12"
 tokio = { version = "1", features = ["rt", "sync"] }
 
 [dev-dependencies]
+point-lio = { path = "../point_lio" }
 tokio = { version = "1", features = ["rt", "sync", "macros", "time"] }

@@ -128,3 +128,8 @@
 - Done：仓库此前无提交，按忽略规则、导航基础包、Point-LIO、terrain_map、对照工具、设计验证资料分类建立中文提交。Point-LIO初始提交使用单成员工作区，后续提交扩展terrain_map，保持代码提交可独立构建。
 - Verify：忽略规则正反例通过，格式检查通过；Point-LIO 21项核心/融合回归与terrain_map 13项回归通过。未重跑完整可用性压力测试，已有300体素失败记录原样保留。
 - Scope：本轮仅整理版本；Point-LIO到terrain_map的观测增量接口尚未实施。
+
+## 2026-11-12 / T12 地形观测输出
+- Done：同步核心新增源会话与序号、采样时刻LiDAR原点、按iVox分辨率分组的筛点前观测，ScanResult新增Arc批次；新增observation_reset与new_with_source，保持filter.rs/map.rs不变。
+- Verify：21项核心/融合回归通过；静止、正常旋转、饱和旋转、空帧恢复CSV与既有基线字节一致；容器全工程构建及端到端连接通过。
+- Scope：不将缓存淘汰暴露为环境删除；尚未新增Point-LIO专用在线Tokio服务，示例由调用方spawn_blocking调度。导出额外分组/内存开销未做压力复测，既有300格失败不变。

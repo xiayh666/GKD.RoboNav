@@ -141,4 +141,22 @@ CMake 的 `CMAKE_BUILD_TYPE` 不控制 Cargo 配置。
 其他 Rust crate 仍通过 Cargo `path` 依赖引用本库；供 ROS 节点调用的接口不在此构建入口中实现。
 
 实际 `ros2` 容器挂载工程到 `/workspace/GKD.RoboNav`；已安装 Rust 工具链。
-与宿主机共用工程时，容器构建使用 `colcon --log-base log/ros2 build --build-base build/ros2 --install-base install/ros2`，避免混用 CMake 绝对路径缓存。该配置的产物位于 `build/ros2/point_lio/cargo/release/`。
+工程在ros2容器内直接使用 `colcon build`，产物位于 `build/point_lio/cargo/release/`。CMake缓存不能跨宿主与容器复用，切换环境前需清理对应包的构建缓存。
+
+## 面向地形模块的观测输出
+
+每次成功的 `process_scan` 除原有状态、协方差和世界系点云外，还返回
+`ScanResult.observations: Arc<map_updates::ObservationBatch>`。它按 `voxel_size`
+分组所有通过距离过滤的回波，在 `filter_size_map` 插点筛选前生成；缓存未增长也会持续输出观测。
+每个点的原点、终点均使用该采样时刻的后验状态，原点包括 LiDAR→IMU 外参平移。
+
+用 `PointLio::new_with_source(config, source_id)` 为多个估计器分配不同源编号。
+首次发送前取 `observation_reset()`，然后顺序发送 `MapUpdate::Reset` 和后续
+`MapUpdate::Observations(result.observations)`。失败或等待IMU的扫描不消耗序号。
+`reset()` 会递增会话epoch；调用方必须先发送新的Reset，再发送新观测。
+同一估计器的重同步可通过在生产者顺序边界再次取 `observation_reset()` 完成，不改变滤波和iVox。
+
+iVox 的缓存淘汰不会发送环境删除。此接口没有改变滤波模型、地图筛选或淘汰规则；构造观测批次会增加分组和内存开销。原有 `world_points` 为兼容保留，因此输出阶段仍有坐标数据冗余，并非整个生产过程零拷贝。
+
+完整连接示例：`cargo run --release -p terrain-map --example lio_connection`。
+该示例在调用方Tokio runtime中按帧用spawn_blocking运行Point-LIO，再把Arc批次交给terrain_map有界通道；Point-LIO本身仍是无后台线程的同步核心，尚未新增独立的在线IMU/扫描调度服务。

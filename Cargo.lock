@@ -55,6 +55,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0e9c71c2167ca323c882b99918929403426e2373ea17242ff5653e0d5e1058be"
 
 [[package]]
+name = "map-updates"
+version = "0.1.0"
+
+[[package]]
 name = "matrixmultiply"
 version = "0.3.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -155,6 +159,7 @@ checksum = "a89322df9ebe1c1578d689c92318e070967d1042b512afbe49518723f4e6d5cd"
 name = "point-lio"
 version = "0.1.0"
 dependencies = [
+ "map-updates",
  "nalgebra",
 ]
 
@@ -250,6 +255,8 @@ dependencies = [
 name = "terrain-map"
 version = "0.1.0"
 dependencies = [
+ "map-updates",
+ "point-lio",
  "rayon",
  "tokio",
 ]

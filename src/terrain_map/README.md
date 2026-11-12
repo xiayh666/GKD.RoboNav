@@ -1,7 +1,7 @@
 # terrain_map
 
 纯 Rust 在线地形地图库，Cargo 包名 `terrain-map`，无 ROS 类型或 ament 依赖。
-目前完成体素地图、Tokio 运行层与人工标注管理。地面特征、自动隧道识别、机器人通行性和导航栅格仍待实现，不能将当前输出直接当作导航通行结论。
+目前完成上游观测增量接入、独立表面几何视图、可选射线占据地图、Tokio 运行层与人工标注管理。地面特征、自动隧道识别、机器人通行性和导航栅格仍待实现，不能将当前输出直接当作导航通行结论。
 
 ## 已实现架构
 
@@ -15,9 +15,22 @@
 
 ## 输入约定
 
-`Frame` 包含严格递增的秒时间、局部地图中心和 `Vec<Ray>`。每条射线的 `origin` 与 `endpoint` 必须已变换到同一个重力对齐、米制坐标系，且对应回波采样时刻。
+主入口是 `MapUpdate`：先发送显式Reset，再发送Point-LIO的`ScanResult.observations`。
+`SurfaceSnapshot`直接使用生产者分辨率和i64体素键，保留独立的局部几何视图；不跟随iVox LRU删除。
+第一次无需裁剪/限样的观测数组可直接共享Arc，后续只合并被观测的格，每格最多保存
+`max_surface_samples_per_voxel`个最近样本（默认256），最多`max_surface_voxels`格（默认200000）。
+`surfaces.live_samples(key)`排除单个过期样本，几何算法应使用此接口；格整体按最近观测时间老化。
+未出现在本批次中的格不会直接删除，仍按本模块窗口/老化管理。
 
-本库不做去畸变、外参变换和自体点过滤。Point-LIO 目前输出的 `world_points` 不包含逐点观测原点，因此当前尚未自动连接两个库；不能用帧末 IMU 位置替代所有射线原点。
+`MapSnapshot.surfaces`是主几何视图，含源会话、下一序号、分辨率、帧末位姿及状态。
+`integrate_observation_rays`默认false，此时`MapSnapshot.map`不会重复进行射线建图；如需独立自由空间证据可显式开启，使用本模块`resolution`积分。
+两个视图的分辨率可不同，主几何不重新分组。`SurfaceVoxelKey`是上游几何键，原`VoxelKey`是可选占据地图键。
+
+出现缺失序号后返回SequenceGap，清空可用几何/占据视图并发布NeedsReset状态，拒绝后续融合，直到显式Reset。
+同会话重同步保留人工标注；换源/epoch时旧坐标系标注清空，不能假定新里程计坐标与旧坐标一致。
+重复批次和迟到的旧会话消息仅拒绝，不推进版本。初次Reset会清空未绑定会话的旧标注。
+
+旧`Frame`是独立的低层射线输入，接入观测会话后禁止混用。它包含递增秒时间、局部中心和逐回波世界系原点/终点；本库不做去畸变、外参变换和自体过滤。
 
 超出 `max_range` 的回波仅清除截断射线，不在截断位置制造占用点。没有回波并不代表该方向可清空；空帧仅推进时间和地图窗口。窗口外、未观察或过期的格查询为未知。没有看到地面也不能视为可通行。
 
@@ -30,6 +43,8 @@ cargo run --release --locked -p terrain-map --example online
 ```
 
 `TerrainRuntime::start(config)` 要求已有 Tokio runtime，支持 current_thread。
+主接口为 `try_submit_update` / `submit_update`，拒绝时返回包含原MapUpdate的RejectedUpdate；批次Arc移动而不复制整帧。Reset与批次走相同FIFO。丢序的错误回执同时会通过watch发布失效状态。
+旧射线接口如下，仅用于独立低层输入：
 
 - `handle.try_submit(frame)`：立即返回回执，队列满则返回 `RejectedFrame { error: Busy, frame }`，保留原帧供调用方选择重试或舍弃，不静默丢帧。
 - `handle.submit(frame).await`：等待队列空间；拿到回执代表接收，`receipt.wait().await` 才报告提交成功或帧校验失败。取消等待提交的 future 会丢弃 future 持有的帧；已接收的请求不会因回执被丢弃而撤销。
@@ -53,10 +68,22 @@ cargo run --release --locked -p terrain-map --example throughput -- 10000 5
 
 ```sh
 source /opt/ros/jazzy/setup.bash
-colcon --log-base log/ros2 build --build-base build/ros2 --install-base install/ros2
+colcon build
 ```
 
-只编译本库可追加 `--packages-select terrain_map`。默认产物位于 `build/ros2/terrain_map/cargo/release/libterrain_map.rlib`。
+只编译本库可追加 `--packages-select terrain_map`。默认产物位于 `build/terrain_map/cargo/release/libterrain_map.rlib`。
 CMake 安装仅包含此说明；Rust 消费方仍使用 Cargo path 依赖。`TERRAIN_MAP_CARGO_PROFILE` / `TERRAIN_MAP_CARGO_TARGET_DIR` 可控制构建配置和缓存目录。
 
 设计与验证记录见 [doc/terrain-map](../../doc/terrain-map/design.md)。已确定的后续需求：全向轮底盘的净空/台阶分析，以及“有顶、有两侧墙且连续延伸”的隧道自动识别；隧道即使几何可通过也禁止通行，同时支持人工提示与强制禁行区域。
+
+## Point-LIO连接示例
+
+```sh
+cargo run --release --locked -p terrain-map --example lio_connection
+```
+
+该合成示例在单线程Tokio调度器上运行，Point-LIO计算放入spawn_blocking，结果通过Arc和有界通道送入地形模块。
+配置iVox只保留5格，地形视图仍能独立积累49、91、133格，验证定位缓存淘汰不等于环境消失。尚未接入实际ROS传感器，也未实现地形/隧道分析。
+
+异步人工区域命令会校验会话。UI请用`upsert_annotation_in_session` / `remove_annotation_in_session`传入所展示快照的session，避免队列处理期间Reset造成坐标错用。默认接口捕获实际提交时latest会话，不能替代UI版本关联。每个Mapper保留至多1024个生产源的最大epoch，迟到旧源Reset被拒绝。
+本阶段验证见[观测接口报告](../../doc/terrain-map/observation-interface.md)。

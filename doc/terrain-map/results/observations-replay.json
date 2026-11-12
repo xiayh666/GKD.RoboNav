@@ -1,0 +1,22 @@
+{
+  "stationary": {
+    "baseline": "doc/point-lio-rust/results-corrected/rust_stationary.csv",
+    "sha256": "a8aadbd5104a960930d2799f0a4174ed785013f77b08506b7b8207696d4ed274",
+    "byte_identical": true
+  },
+  "rotation_control": {
+    "baseline": "doc/point-lio-rust/results-corrected/rust_rotation_control.csv",
+    "sha256": "8200ebc16141f4d069faf40f735c38e656f65555d0c849fdc5dca0d4e705f687",
+    "byte_identical": true
+  },
+  "rotation_clipped": {
+    "baseline": "doc/point-lio-rust/results-corrected/rust_rotation_clipped.csv",
+    "sha256": "4e1f4d29baff1a50d95ac0484c411d1678234c91e52a7378eb0cc15e44bc4607",
+    "byte_identical": true
+  },
+  "recovery": {
+    "baseline": "doc/point-lio-rust/results-corrected/rust_recovery.csv",
+    "sha256": "7d97c5cc93f739107be043301eddc1f164362dac48abc131a248d0801f436187",
+    "byte_identical": true
+  }
+}
