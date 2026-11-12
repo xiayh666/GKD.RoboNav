@@ -1,0 +1,87 @@
+{
+  "command": [
+    "/tmp/terrain-map-stress-target/release/examples/chain_stress",
+    "chain",
+    "10000",
+    "3000",
+    "10",
+    "2",
+    "moving"
+  ],
+  "returncode": 0,
+  "complete_unique_frames": true,
+  "frames": 3000,
+  "warmup_frames_excluded": 50,
+  "wall_s": 300.05093032999866,
+  "effective_hz_including_pacing": 9.998302610495402,
+  "metrics": {
+    "lio_ms": {
+      "p50": 53.772817,
+      "p95": 60.102886,
+      "p99": 67.080046,
+      "max": 103.091306
+    },
+    "export_rebuild_ms": {
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0
+    },
+    "admission_ms": {
+      "p50": 0.002645,
+      "p95": 0.004646,
+      "p99": 0.00914,
+      "max": 0.091943
+    },
+    "ack_ms": {
+      "p50": 7.57982,
+      "p95": 9.929062,
+      "p99": 11.99409,
+      "max": 22.517803
+    },
+    "e2e_ms": {
+      "p50": 62.656143,
+      "p95": 69.734985,
+      "p99": 77.386197,
+      "max": 121.152426
+    },
+    "scheduled_ms": {
+      "p50": 63.864673,
+      "p95": 71.055564,
+      "p99": 79.022768,
+      "max": 121.961919
+    }
+  },
+  "resources": {
+    "sample_period_s": 0.2,
+    "peak_rss_mib": 114.8984375,
+    "peak_hwm_mib": 114.8984375,
+    "cpu_percent_one_core": 63.23812508497861,
+    "cpu_seconds_observed": 189.62,
+    "max_threads": 5,
+    "previous_quarter_rss_mib_p50": 114.8984375,
+    "last_quarter_rss_mib_p50": 114.8984375
+  },
+  "max_pending_receipts": 1.0,
+  "over_100ms_work_frames_steady": 2,
+  "over_100ms_scheduled_frames_steady": 3,
+  "max_position_error_m": 0.002936141,
+  "max_angle_error_rad": 0.001314607,
+  "final_frame": {
+    "frame": 2999.0,
+    "lio_ms": 55.383375,
+    "export_rebuild_ms": 0.0,
+    "admission_ms": 0.002512,
+    "ack_ms": 8.246694,
+    "e2e_ms": 64.423686,
+    "scheduled_ms": 66.081941,
+    "pending": 1.0,
+    "terrain_voxels": 1944.0,
+    "samples": 497664.0,
+    "ivox_points": 16266.0,
+    "matches": 10000.0,
+    "position_error_m": 0.000385175,
+    "angle_error_rad": 0.000247751
+  },
+  "stderr": "mode=chain frames=3000 points=10000 hz=10 threads=2 busy=0 elapsed_s=299.966\n"
+}

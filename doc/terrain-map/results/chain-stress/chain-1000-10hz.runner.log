@@ -1,0 +1,86 @@
+{
+  "command": [
+    "/tmp/terrain-map-stress-target/release/examples/chain_stress",
+    "chain",
+    "1000",
+    "600",
+    "10",
+    "2"
+  ],
+  "returncode": 0,
+  "complete_unique_frames": true,
+  "frames": 600,
+  "warmup_frames_excluded": 50,
+  "wall_s": 60.105295347999345,
+  "effective_hz_including_pacing": 9.98248151890949,
+  "metrics": {
+    "lio_ms": {
+      "p50": 5.333536,
+      "p95": 10.14805,
+      "p99": 14.270319,
+      "max": 28.67273
+    },
+    "export_rebuild_ms": {
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0
+    },
+    "admission_ms": {
+      "p50": 0.002185,
+      "p95": 0.005196,
+      "p99": 0.008036,
+      "max": 0.040506
+    },
+    "ack_ms": {
+      "p50": 2.938148,
+      "p95": 5.051564,
+      "p99": 7.629299,
+      "max": 11.238059
+    },
+    "e2e_ms": {
+      "p50": 8.70538,
+      "p95": 14.792414,
+      "p99": 23.005075,
+      "max": 34.626636
+    },
+    "scheduled_ms": {
+      "p50": 9.895248,
+      "p95": 16.306983,
+      "p99": 24.429443,
+      "max": 35.561657
+    }
+  },
+  "resources": {
+    "sample_period_s": 0.2,
+    "peak_rss_mib": 34.1875,
+    "peak_hwm_mib": 34.1875,
+    "cpu_percent_one_core": 9.348113516425393,
+    "cpu_seconds_observed": 5.6,
+    "max_threads": 4,
+    "previous_quarter_rss_mib_p50": 33.77734375,
+    "last_quarter_rss_mib_p50": 33.3359375
+  },
+  "max_pending_receipts": 1.0,
+  "over_100ms_work_frames_steady": 0,
+  "over_100ms_scheduled_frames_steady": 0,
+  "max_position_error_m": 0.001140123,
+  "max_angle_error_rad": 0.00041925,
+  "final_frame": {
+    "frame": 599.0,
+    "lio_ms": 5.054507,
+    "export_rebuild_ms": 0.0,
+    "admission_ms": 0.001893,
+    "ack_ms": 2.98125,
+    "e2e_ms": 8.424659,
+    "scheduled_ms": 9.734302,
+    "pending": 1.0,
+    "terrain_voxels": 1788.0,
+    "samples": 299721.0,
+    "ivox_points": 2197.0,
+    "matches": 1000.0,
+    "position_error_m": 0.000402406,
+    "angle_error_rad": 6.2715e-05
+  },
+  "stderr": "mode=chain frames=600 points=1000 hz=10 threads=2 busy=0 elapsed_s=59.910\n"
+}

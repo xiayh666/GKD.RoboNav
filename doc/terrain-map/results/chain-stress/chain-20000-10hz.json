@@ -1,0 +1,86 @@
+{
+  "command": [
+    "/tmp/terrain-map-stress-target/release/examples/chain_stress",
+    "chain",
+    "20000",
+    "600",
+    "10",
+    "2"
+  ],
+  "returncode": 0,
+  "complete_unique_frames": true,
+  "frames": 600,
+  "warmup_frames_excluded": 50,
+  "wall_s": 72.51800758399986,
+  "effective_hz_including_pacing": 8.273807016898546,
+  "metrics": {
+    "lio_ms": {
+      "p50": 118.796182,
+      "p95": 128.497981,
+      "p99": 136.25493,
+      "max": 154.691549
+    },
+    "export_rebuild_ms": {
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0
+    },
+    "admission_ms": {
+      "p50": 0.002968,
+      "p95": 0.005413,
+      "p99": 0.009177,
+      "max": 0.01268
+    },
+    "ack_ms": {
+      "p50": 10.13764,
+      "p95": 14.518706,
+      "p99": 17.136858,
+      "max": 24.330596
+    },
+    "e2e_ms": {
+      "p50": 130.047504,
+      "p95": 141.35655,
+      "p99": 149.642446,
+      "max": 165.440636
+    },
+    "scheduled_ms": {
+      "p50": 6605.490118,
+      "p95": 11956.609297,
+      "p99": 12442.970929,
+      "max": 12596.38222
+    }
+  },
+  "resources": {
+    "sample_period_s": 0.2,
+    "peak_rss_mib": 116.4921875,
+    "peak_hwm_mib": 116.4921875,
+    "cpu_percent_one_core": 107.58059198147811,
+    "cpu_seconds_observed": 77.8,
+    "max_threads": 5,
+    "previous_quarter_rss_mib_p50": 104.12890625,
+    "last_quarter_rss_mib_p50": 104.33984375
+  },
+  "max_pending_receipts": 1.0,
+  "over_100ms_work_frames_steady": 550,
+  "over_100ms_scheduled_frames_steady": 550,
+  "max_position_error_m": 0.005848511,
+  "max_angle_error_rad": 0.001899453,
+  "final_frame": {
+    "frame": 599.0,
+    "lio_ms": 123.027079,
+    "export_rebuild_ms": 0.0,
+    "admission_ms": 0.002489,
+    "ack_ms": 12.006578,
+    "e2e_ms": 136.087355,
+    "scheduled_ms": 12596.38222,
+    "pending": 1.0,
+    "terrain_voxels": 1944.0,
+    "samples": 497664.0,
+    "ivox_points": 30862.0,
+    "matches": 20000.0,
+    "position_error_m": 0.001343101,
+    "angle_error_rad": 0.000537855
+  },
+  "stderr": "mode=chain frames=600 points=20000 hz=10 threads=2 busy=0 elapsed_s=72.496\n"
+}

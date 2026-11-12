@@ -1,0 +1,86 @@
+{
+  "command": [
+    "/tmp/terrain-map-stress-target/release/examples/chain_stress",
+    "burst",
+    "20000",
+    "1000",
+    "0",
+    "2"
+  ],
+  "returncode": 0,
+  "complete_unique_frames": true,
+  "frames": 1000,
+  "warmup_frames_excluded": 50,
+  "wall_s": 4.0062597040014225,
+  "effective_hz_including_pacing": 249.60937979163143,
+  "metrics": {
+    "lio_ms": {
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0
+    },
+    "export_rebuild_ms": {
+      "p50": 1.617267,
+      "p95": 2.383433,
+      "p99": 2.703429,
+      "max": 3.151792
+    },
+    "admission_ms": {
+      "p50": 2.04618,
+      "p95": 3.539699,
+      "p99": 4.119571,
+      "max": 5.77442
+    },
+    "ack_ms": {
+      "p50": 11.28998,
+      "p95": 14.848571,
+      "p99": 16.679084,
+      "max": 18.778959
+    },
+    "e2e_ms": {
+      "p50": 15.069851,
+      "p95": 19.412931,
+      "p99": 21.385016,
+      "max": 23.050699
+    },
+    "scheduled_ms": {
+      "p50": 15.069889,
+      "p95": 19.413211,
+      "p99": 21.385045,
+      "max": 23.050728
+    }
+  },
+  "resources": {
+    "sample_period_s": 0.2,
+    "peak_rss_mib": 38.609375,
+    "peak_hwm_mib": 40.71484375,
+    "cpu_percent_one_core": 139.77418748035086,
+    "cpu_seconds_observed": 5.32,
+    "max_threads": 6,
+    "previous_quarter_rss_mib_p50": 38.609375,
+    "last_quarter_rss_mib_p50": 38.609375
+  },
+  "max_pending_receipts": 3.0,
+  "over_100ms_work_frames_steady": 0,
+  "over_100ms_scheduled_frames_steady": 0,
+  "max_position_error_m": 0.0,
+  "max_angle_error_rad": 0.0,
+  "final_frame": {
+    "frame": 999.0,
+    "lio_ms": 0.0,
+    "export_rebuild_ms": 1.67067,
+    "admission_ms": 2.808356,
+    "ack_ms": 12.018805,
+    "e2e_ms": 16.497941,
+    "scheduled_ms": 16.497971,
+    "pending": 3.0,
+    "terrain_voxels": 972.0,
+    "samples": 0.0,
+    "ivox_points": 0.0,
+    "matches": 0.0,
+    "position_error_m": 0.0,
+    "angle_error_rad": 0.0
+  },
+  "stderr": "mode=burst frames=1000 points=20000 hz=0 busy=980 elapsed_s=3.995\n"
+}

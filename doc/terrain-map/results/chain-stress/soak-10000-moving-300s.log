@@ -1,0 +1,1 @@
+mode=chain frames=3000 points=10000 hz=10 threads=2 busy=0 elapsed_s=299.966

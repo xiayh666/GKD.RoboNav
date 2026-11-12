@@ -1,0 +1,86 @@
+{
+  "command": [
+    "/tmp/terrain-map-stress-target/release/examples/chain_stress",
+    "direct",
+    "10000",
+    "1000",
+    "0",
+    "2"
+  ],
+  "returncode": 0,
+  "complete_unique_frames": true,
+  "frames": 1000,
+  "warmup_frames_excluded": 50,
+  "wall_s": 4.607378192002216,
+  "effective_hz_including_pacing": 217.04317690609042,
+  "metrics": {
+    "lio_ms": {
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0
+    },
+    "export_rebuild_ms": {
+      "p50": 0.949493,
+      "p95": 1.037629,
+      "p99": 1.213239,
+      "max": 1.507894
+    },
+    "admission_ms": {
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0
+    },
+    "ack_ms": {
+      "p50": 3.502967,
+      "p95": 4.635366,
+      "p99": 5.325803,
+      "max": 5.94558
+    },
+    "e2e_ms": {
+      "p50": 4.467849,
+      "p95": 5.608415,
+      "p99": 6.447794,
+      "max": 6.916164
+    },
+    "scheduled_ms": {
+      "p50": 4.467989,
+      "p95": 5.608543,
+      "p99": 6.447974,
+      "max": 6.916249
+    }
+  },
+  "resources": {
+    "sample_period_s": 0.2,
+    "peak_rss_mib": 31.9140625,
+    "peak_hwm_mib": 32.34765625,
+    "cpu_percent_one_core": 99.38283459388488,
+    "cpu_seconds_observed": 4.38,
+    "max_threads": 6,
+    "previous_quarter_rss_mib_p50": 31.640625,
+    "last_quarter_rss_mib_p50": 31.671875
+  },
+  "max_pending_receipts": 0.0,
+  "over_100ms_work_frames_steady": 0,
+  "over_100ms_scheduled_frames_steady": 0,
+  "max_position_error_m": 0.0,
+  "max_angle_error_rad": 0.0,
+  "final_frame": {
+    "frame": 999.0,
+    "lio_ms": 0.0,
+    "export_rebuild_ms": 0.94523,
+    "admission_ms": 0.0,
+    "ack_ms": 3.25936,
+    "e2e_ms": 4.206415,
+    "scheduled_ms": 4.20646,
+    "pending": 0.0,
+    "terrain_voxels": 972.0,
+    "samples": 248832.0,
+    "ivox_points": 0.0,
+    "matches": 0.0,
+    "position_error_m": 0.0,
+    "angle_error_rad": 0.0
+  },
+  "stderr": "mode=direct frames=1000 points=10000 hz=0 busy=0 elapsed_s=4.593\n"
+}

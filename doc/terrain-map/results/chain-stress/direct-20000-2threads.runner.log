@@ -1,0 +1,86 @@
+{
+  "command": [
+    "/tmp/terrain-map-stress-target/release/examples/chain_stress",
+    "direct",
+    "20000",
+    "1000",
+    "0",
+    "2"
+  ],
+  "returncode": 0,
+  "complete_unique_frames": true,
+  "frames": 1000,
+  "warmup_frames_excluded": 50,
+  "wall_s": 5.208437862002029,
+  "effective_hz_including_pacing": 191.9961467324904,
+  "metrics": {
+    "lio_ms": {
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0
+    },
+    "export_rebuild_ms": {
+      "p50": 1.534726,
+      "p95": 1.665485,
+      "p99": 2.116366,
+      "max": 3.001533
+    },
+    "admission_ms": {
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0
+    },
+    "ack_ms": {
+      "p50": 3.498071,
+      "p95": 4.368328,
+      "p99": 5.032685,
+      "max": 6.996226
+    },
+    "e2e_ms": {
+      "p50": 5.046306,
+      "p95": 6.051038,
+      "p99": 6.738771,
+      "max": 8.559419
+    },
+    "scheduled_ms": {
+      "p50": 5.046396,
+      "p95": 6.051156,
+      "p99": 6.738991,
+      "max": 8.559717
+    }
+  },
+  "resources": {
+    "sample_period_s": 0.2,
+    "peak_rss_mib": 32.7265625,
+    "peak_hwm_mib": 34.32421875,
+    "cpu_percent_one_core": 98.83699666110101,
+    "cpu_seconds_observed": 4.95,
+    "max_threads": 6,
+    "previous_quarter_rss_mib_p50": 32.69921875,
+    "last_quarter_rss_mib_p50": 32.7265625
+  },
+  "max_pending_receipts": 0.0,
+  "over_100ms_work_frames_steady": 0,
+  "over_100ms_scheduled_frames_steady": 0,
+  "max_position_error_m": 0.0,
+  "max_angle_error_rad": 0.0,
+  "final_frame": {
+    "frame": 999.0,
+    "lio_ms": 0.0,
+    "export_rebuild_ms": 1.521308,
+    "admission_ms": 0.0,
+    "ack_ms": 3.499884,
+    "e2e_ms": 5.023515,
+    "scheduled_ms": 5.02355,
+    "pending": 0.0,
+    "terrain_voxels": 972.0,
+    "samples": 248832.0,
+    "ivox_points": 0.0,
+    "matches": 0.0,
+    "position_error_m": 0.0,
+    "angle_error_rad": 0.0
+  },
+  "stderr": "mode=direct frames=1000 points=20000 hz=0 busy=0 elapsed_s=5.191\n"
+}

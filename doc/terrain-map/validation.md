@@ -29,10 +29,10 @@ workspace clippy（all-targets，-D warnings）和fmt通过。容器统一colcon
 
 ```sh
 source "$HOME/.cargo/env"
-cargo test --release --locked -p terrain-map --target-dir build/ros2/terrain_map/cargo
-cargo run --release --locked -p terrain-map --example online --target-dir build/ros2/terrain_map/cargo
-cargo run --release --locked -p terrain-map --example throughput --target-dir build/ros2/terrain_map/cargo -- 10000 5
-cargo run --release --locked -p terrain-map --example throughput --target-dir build/ros2/terrain_map/cargo -- 20000 5
+cargo test --release --locked -p terrain-map --target-dir build/terrain_map/cargo
+cargo run --release --locked -p terrain-map --example online --target-dir build/terrain_map/cargo
+cargo run --release --locked -p terrain-map --example throughput --target-dir build/terrain_map/cargo -- 10000 5
+cargo run --release --locked -p terrain-map --example throughput --target-dir build/terrain_map/cargo -- 20000 5
 ```
 
 ## 尚未覆盖

@@ -1,0 +1,2 @@
+lifecycle: window_and_sample_bounds=true expired_voxels=17748 after_ttl=0 retained_snapshot_unchanged=true
+mode=lifecycle frames=3000 points=10000 hz=0 busy=0 elapsed_s=15.405

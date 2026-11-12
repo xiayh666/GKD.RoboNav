@@ -1,0 +1,86 @@
+{
+  "command": [
+    "/tmp/terrain-map-stress-target/release/examples/chain_stress",
+    "chain",
+    "10000",
+    "600",
+    "10",
+    "2"
+  ],
+  "returncode": 0,
+  "complete_unique_frames": true,
+  "frames": 600,
+  "warmup_frames_excluded": 50,
+  "wall_s": 60.09602200399968,
+  "effective_hz_including_pacing": 9.984021903480851,
+  "metrics": {
+    "lio_ms": {
+      "p50": 54.624534,
+      "p95": 65.943423,
+      "p99": 79.343542,
+      "max": 83.927565
+    },
+    "export_rebuild_ms": {
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0
+    },
+    "admission_ms": {
+      "p50": 0.002669,
+      "p95": 0.00483,
+      "p99": 0.008004,
+      "max": 0.009386
+    },
+    "ack_ms": {
+      "p50": 8.364181,
+      "p95": 11.402405,
+      "p99": 13.017179,
+      "max": 16.67804
+    },
+    "e2e_ms": {
+      "p50": 64.128202,
+      "p95": 75.710206,
+      "p99": 87.835397,
+      "max": 92.399966
+    },
+    "scheduled_ms": {
+      "p50": 65.043912,
+      "p95": 76.816611,
+      "p99": 88.801467,
+      "max": 93.271789
+    }
+  },
+  "resources": {
+    "sample_period_s": 0.2,
+    "peak_rss_mib": 64.73046875,
+    "peak_hwm_mib": 64.73046875,
+    "cpu_percent_one_core": 64.74575815050876,
+    "cpu_seconds_observed": 38.78,
+    "max_threads": 4,
+    "previous_quarter_rss_mib_p50": 64.41796875,
+    "last_quarter_rss_mib_p50": 64.41796875
+  },
+  "max_pending_receipts": 1.0,
+  "over_100ms_work_frames_steady": 0,
+  "over_100ms_scheduled_frames_steady": 0,
+  "max_position_error_m": 0.002935343,
+  "max_angle_error_rad": 0.001079691,
+  "final_frame": {
+    "frame": 599.0,
+    "lio_ms": 53.716621,
+    "export_rebuild_ms": 0.0,
+    "admission_ms": 0.003689,
+    "ack_ms": 7.312938,
+    "e2e_ms": 61.650005,
+    "scheduled_ms": 62.616265,
+    "pending": 1.0,
+    "terrain_voxels": 1944.0,
+    "samples": 497664.0,
+    "ivox_points": 15904.0,
+    "matches": 10000.0,
+    "position_error_m": 0.00062411,
+    "angle_error_rad": 0.000334314
+  },
+  "stderr": "mode=chain frames=600 points=10000 hz=10 threads=2 busy=0 elapsed_s=59.963\n"
+}

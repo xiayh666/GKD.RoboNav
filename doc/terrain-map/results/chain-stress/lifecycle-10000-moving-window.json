@@ -1,0 +1,86 @@
+{
+  "command": [
+    "/tmp/terrain-map-stress-target/release/examples/chain_stress",
+    "lifecycle",
+    "10000",
+    "3000",
+    "0",
+    "2"
+  ],
+  "returncode": 0,
+  "complete_unique_frames": true,
+  "frames": 3000,
+  "warmup_frames_excluded": 50,
+  "wall_s": 15.427433083001233,
+  "effective_hz_including_pacing": 194.45879193639541,
+  "metrics": {
+    "lio_ms": {
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0
+    },
+    "export_rebuild_ms": {
+      "p50": 1.182109,
+      "p95": 1.397079,
+      "p99": 1.607097,
+      "max": 2.111838
+    },
+    "admission_ms": {
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0
+    },
+    "ack_ms": {
+      "p50": 3.714153,
+      "p95": 5.258995,
+      "p99": 6.279432,
+      "max": 8.644253
+    },
+    "e2e_ms": {
+      "p50": 4.902557,
+      "p95": 6.606422,
+      "p99": 7.784539,
+      "max": 10.202655
+    },
+    "scheduled_ms": {
+      "p50": 4.902688,
+      "p95": 6.606612,
+      "p99": 7.784792,
+      "max": 10.202814
+    }
+  },
+  "resources": {
+    "sample_period_s": 0.2,
+    "peak_rss_mib": 102.53125,
+    "peak_hwm_mib": 102.53125,
+    "cpu_percent_one_core": 99.36114031611154,
+    "cpu_seconds_observed": 15.13,
+    "max_threads": 6,
+    "previous_quarter_rss_mib_p50": 100.359375,
+    "last_quarter_rss_mib_p50": 102.4609375
+  },
+  "max_pending_receipts": 0.0,
+  "over_100ms_work_frames_steady": 0,
+  "over_100ms_scheduled_frames_steady": 0,
+  "max_position_error_m": 0.0,
+  "max_angle_error_rad": 0.0,
+  "final_frame": {
+    "frame": 2999.0,
+    "lio_ms": 0.0,
+    "export_rebuild_ms": 1.202698,
+    "admission_ms": 0.0,
+    "ack_ms": 4.118784,
+    "e2e_ms": 5.382842,
+    "scheduled_ms": 5.382976,
+    "pending": 0.0,
+    "terrain_voxels": 17748.0,
+    "samples": 1495202.0,
+    "ivox_points": 0.0,
+    "matches": 0.0,
+    "position_error_m": 0.0,
+    "angle_error_rad": 0.0
+  },
+  "stderr": "lifecycle: window_and_sample_bounds=true expired_voxels=17748 after_ttl=0 retained_snapshot_unchanged=true\nmode=lifecycle frames=3000 points=10000 hz=0 busy=0 elapsed_s=15.405\n"
+}
