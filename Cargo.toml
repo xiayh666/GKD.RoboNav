@@ -1,3 +1,3 @@
 [workspace]
-members = ["src/point_lio"]
+members = ["src/point_lio", "src/terrain_map"]
 resolver = "2"
