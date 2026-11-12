@@ -1,0 +1,28 @@
+    Finished `release` profile [optimized] target(s) in 0.01s
+     Running tests/usability.rs (target/release/deps/usability-1012f9dfcf45d28f)
+
+running 6 tests
+test floor_only_does_not_observe_tangential_drift ... floor_degeneracy_3s: x_drift_m=0.771380, z_error_m=0.000000, matches=48283
+ok
+test lidar_returns_after_half_second_without_points ... lidar_recovery: first_matches=1665, final_position_m=0.000418
+ok
+test processing_time_by_scan_size ... ignored, manual release-mode timing measurement
+test rotating_with_clipped_gyro_and_lidar ... clipped_rotation_3s: max_angle_rad=0.011530, control_max_angle_rad=0.008048, rejected_axes=532
+ok
+test sixty_seconds_stationary_default_map_with_sensor_noise ... stationary_60s: capacity=100000, max_position_m=0.026380, max_angle_rad=0.009103, min_matches=999, map=4767
+ok
+test sixty_seconds_stationary_with_sensor_noise ... stationary_60s: capacity=300, max_position_m=1.642475, max_angle_rad=0.305982, min_matches=845, map=907
+
+thread 'sixty_seconds_stationary_with_sensor_noise' (12) panicked at src/point_lio_rs/tests/usability.rs:120:5:
+stationary drift 1.642474849580125 m
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+FAILED
+
+failures:
+
+failures:
+    sixty_seconds_stationary_with_sensor_noise
+
+test result: FAILED. 4 passed; 1 failed; 1 ignored; 0 measured; 0 filtered out; finished in 6.78s
+
+error: test failed, to rerun pass `-p point-lio --test usability`

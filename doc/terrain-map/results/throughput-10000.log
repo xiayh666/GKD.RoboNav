@@ -1,0 +1,5 @@
+    Finished `release` profile [optimized] target(s) in 0.01s
+     Running `target/release/examples/throughput 10000 5`
+points=10000, threads=1, samples=5, median_ms=38.831, min_ms=38.407, max_ms=40.236, blocks=2550
+points=10000, threads=2, samples=5, median_ms=22.380, min_ms=22.286, max_ms=23.201, blocks=2550
+points=10000, threads=4, samples=5, median_ms=15.975, min_ms=15.062, max_ms=16.997, blocks=2550

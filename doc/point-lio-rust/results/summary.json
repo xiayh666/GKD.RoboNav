@@ -1,0 +1,142 @@
+{
+  "inputs": {
+    "stationary": "4be59e8f9c11da6d76e84a217e19fb9f9a3bfb1f41e406ccacac2c9551641cc6",
+    "rotation_control": "5f0c33c1de1f574ca78f153206615b8c6d57c16300decec13ddbace65a22f8ba",
+    "rotation_clipped": "62c8e5fe16251217fa2936424b1f4347edbceca5b568d7f4476d39a8ae3dc207",
+    "floor": "59de37d491b125d622b387c374d0aa19281fb6ac7612106e8f3c868b8510402c",
+    "recovery": "7a7de72ffa0bc68c8e923292006e4f852d52d11144bd36c2f226366f4beb1983"
+  },
+  "trajectories": {
+    "rust_stationary": {
+      "samples": 600,
+      "first_time": 0.6,
+      "last_time": 60.5,
+      "max_position_m": 0.020258542749494374,
+      "rmse_position_m": 0.009428366936671123,
+      "max_angle_rad": 0.006286227114963977,
+      "rmse_angle_rad": 0.0028679551769605753
+    },
+    "official_stationary": {
+      "samples": 599,
+      "first_time": 0.698900902,
+      "last_time": 60.498900902,
+      "max_position_m": 0.025458504315404782,
+      "rmse_position_m": 0.0035040916590432973,
+      "max_angle_rad": 0.00905488634431315,
+      "rmse_angle_rad": 0.0012898617270286738
+    },
+    "rust_rotation_control": {
+      "samples": 30,
+      "first_time": 0.6,
+      "last_time": 3.5,
+      "max_position_m": 0.07963677962029124,
+      "rmse_position_m": 0.05384911111065566,
+      "max_angle_rad": 0.10152527284426487,
+      "rmse_angle_rad": 0.0759464546093901
+    },
+    "official_rotation_control": {
+      "samples": 29,
+      "first_time": 0.698940544,
+      "last_time": 3.498940544,
+      "max_position_m": 0.0004790555638590027,
+      "rmse_position_m": 0.00038827342369534824,
+      "max_angle_rad": 0.010936213341150053,
+      "rmse_angle_rad": 0.005747306266657213
+    },
+    "rust_rotation_clipped": {
+      "samples": 30,
+      "first_time": 0.6,
+      "last_time": 3.5,
+      "max_position_m": 0.0914833063619363,
+      "rmse_position_m": 0.0599360639500292,
+      "max_angle_rad": 0.1082423359423786,
+      "rmse_angle_rad": 0.08046634587742357
+    },
+    "official_rotation_clipped": {
+      "samples": 29,
+      "first_time": 0.698940544,
+      "last_time": 3.498940544,
+      "max_position_m": 0.0006561708987733413,
+      "rmse_position_m": 0.00040980407120915386,
+      "max_angle_rad": 0.013475823555333027,
+      "rmse_angle_rad": 0.006909282587014958
+    },
+    "rust_floor": {
+      "samples": 30,
+      "first_time": 0.6,
+      "last_time": 3.5,
+      "max_position_m": 0.780141546,
+      "rmse_position_m": 0.3595540336389402,
+      "max_angle_rad": 0.0,
+      "rmse_angle_rad": 0.0
+    },
+    "official_floor": {
+      "samples": 29,
+      "first_time": 0.698940544,
+      "last_time": 3.498940544,
+      "max_position_m": 0.25765634528783987,
+      "rmse_position_m": 0.11024041039514845,
+      "max_angle_rad": 0.000303001265798753,
+      "rmse_angle_rad": 7.973695702930321e-05
+    },
+    "rust_recovery": {
+      "samples": 25,
+      "first_time": 0.6,
+      "last_time": 3.0,
+      "max_position_m": 0.018641872680500958,
+      "rmse_position_m": 0.01191238855863058,
+      "max_angle_rad": 0.006531919838179664,
+      "rmse_angle_rad": 0.004153389440719941
+    },
+    "official_recovery": {
+      "samples": 19,
+      "first_time": 0.698940544,
+      "last_time": 2.998940544,
+      "max_position_m": 0.00031934348446158785,
+      "rmse_position_m": 0.0002641342464980675,
+      "max_angle_rad": 4.140289179653512e-05,
+      "rmse_angle_rad": 2.6048709432143238e-05
+    }
+  },
+  "official_compute_timing_ms": {
+    "1000": {
+      "samples": 5,
+      "median": 6.772,
+      "min": 4.896000000000001,
+      "max": 11.168000000000001,
+      "durations": [
+        11.168000000000001,
+        6.772,
+        7.386,
+        5.3779999999999974,
+        4.896000000000001
+      ]
+    },
+    "10000": {
+      "samples": 5,
+      "median": 55.426,
+      "min": 47.559999999999995,
+      "max": 60.75200000000001,
+      "durations": [
+        47.559999999999995,
+        60.75200000000001,
+        57.041999999999994,
+        55.426,
+        55.334999999999994
+      ]
+    },
+    "20000": {
+      "samples": 5,
+      "median": 142.206,
+      "min": 103.358,
+      "max": 147.53000000000006,
+      "durations": [
+        103.358,
+        136.702,
+        142.206,
+        147.53000000000006,
+        146.0889999999999
+      ]
+    }
+  }
+}

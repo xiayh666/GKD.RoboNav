@@ -1,0 +1,7 @@
+lidar_type: 2
+~~~~/work/catkin/src/point_lio/ file opened
+[33m[WARN] [1794450088.590136464]: Reset ImuProcess[0m
+[33m[WARN] [1794450101.375482132]: catch sig 2[0m
+first imu time: 0.600000
+[0m[INFO] [1794450088.588244478]: IMU Initializing: 1.0 %[0m
+[0m[INFO] [1794450088.590209169]: IMU Initializing: 100.0 %[0m

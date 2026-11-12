@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-12",
+  "official_baseline": "../results/manifest.json",
+  "oracle_fixture": "../../../src/point_lio_rs/tests/data/official_filter.csv",
+  "oracle_fixture_sha256": "595b44caa16dd573dca88c7d657bbee6b36f37db9f51f2f502db50f9d30d77ce",
+  "oracle_max_absolute_error": 1.3243746377344934e-14,
+  "oracle_scope": "7 checkpoints: complete nominal state and covariance; 6D IMU including saturated axis and two simultaneous plane observations; no map",
+  "rust_timing_median_ms": {
+    "1000": 4.661,
+    "10000": 45.5,
+    "20000": 107.182
+  },
+  "known_failed_test": "sixty_seconds_stationary_with_sensor_noise: 300 voxel budget, max position 1.642475 m > 0.15 m",
+  "fixture_change": "floor-only usability regression now uses unique 2D surface samples; old CSV and comparison remain unchanged",
+  "not_equivalence_claim": "startup, floating point, rank-deficient QR, map capacity boundary, and >=30-row variance-consistent update differ from original runtime"
+}

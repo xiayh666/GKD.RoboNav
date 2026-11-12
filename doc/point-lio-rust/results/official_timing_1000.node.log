@@ -1,0 +1,12 @@
+lidar_type: 2
+~~~~/work/catkin/src/point_lio/ file opened
+[33m[WARN] [1794412140.199128780]: Reset ImuProcess[0m
+[33m[WARN] [1794412140.309685907]: catch sig 2[0m
+first imu time: 0.600000
+[0m[INFO] [1794412140.197422712]: IMU Initializing: 1.0 %[0m
+[0m[INFO] [1794412140.199160494]: IMU Initializing: 100.0 %[0m
+[ mapping ]: time: IMU + Map + Input Downsample: 0.000000 ave match: 0.000000 ave solve: 0.000202  ave ICP: 0.010996  map incre: 0.000172 ave total: 0.011168 icp: 0.009214 propogate: 0.000499 
+[ mapping ]: time: IMU + Map + Input Downsample: 0.000000 ave match: 0.000000 ave solve: 0.000163  ave ICP: 0.006710  map incre: 0.000062 ave total: 0.008970 icp: 0.007641 propogate: 0.000406 
+[ mapping ]: time: IMU + Map + Input Downsample: 0.000000 ave match: 0.000000 ave solve: 0.000157  ave ICP: 0.007349  map incre: 0.000037 ave total: 0.008442 icp: 0.007345 propogate: 0.000388 
+[ mapping ]: time: IMU + Map + Input Downsample: 0.000000 ave match: 0.000000 ave solve: 0.000140  ave ICP: 0.005360  map incre: 0.000019 ave total: 0.007676 icp: 0.006739 propogate: 0.000350 
+[ mapping ]: time: IMU + Map + Input Downsample: 0.000000 ave match: 0.000000 ave solve: 0.000128  ave ICP: 0.004876  map incre: 0.000020 ave total: 0.007120 icp: 0.006289 propogate: 0.000325 

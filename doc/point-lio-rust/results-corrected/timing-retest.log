@@ -1,0 +1,12 @@
+   Compiling point-lio v0.1.0 (/home/xiayh/gkd/GKD.RoboNav/src/point_lio_rs)
+    Finished `release` profile [optimized] target(s) in 0.44s
+     Running tests/usability.rs (target/release/deps/usability-1012f9dfcf45d28f)
+
+running 1 test
+test processing_time_by_scan_size ... timing: points=1000, samples=5, median_ms=4.363, min_ms=4.297, max_ms=4.441, matches_per_frame=1000, meets_10hz_in_all_samples=true
+timing: points=10000, samples=5, median_ms=46.867, min_ms=44.377, max_ms=50.225, matches_per_frame=10000, meets_10hz_in_all_samples=true
+timing: points=20000, samples=5, median_ms=106.777, min_ms=91.833, max_ms=114.009, matches_per_frame=20000, meets_10hz_in_all_samples=false
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 5 filtered out; finished in 0.82s
+

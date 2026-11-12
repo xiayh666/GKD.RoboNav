@@ -1,0 +1,195 @@
+{
+  "inputs": {},
+  "trajectories": {
+    "rust_stationary": {
+      "samples": 600,
+      "first_time": 0.6,
+      "last_time": 60.5,
+      "max_position_m": 0.026380036704158012,
+      "rmse_position_m": 0.0035898005568964614,
+      "max_angle_rad": 0.009102876117821318,
+      "rmse_angle_rad": 0.0012706317129069337
+    },
+    "official_stationary": {
+      "samples": 599,
+      "first_time": 0.698900902,
+      "last_time": 60.498900902,
+      "max_position_m": 0.025458504315404782,
+      "rmse_position_m": 0.0035040916590432973,
+      "max_angle_rad": 0.00905488634431315,
+      "rmse_angle_rad": 0.0012898617270286738
+    },
+    "rust_rotation_control": {
+      "samples": 30,
+      "first_time": 0.6,
+      "last_time": 3.5,
+      "max_position_m": 0.000557336750294649,
+      "rmse_position_m": 0.00029248745941259317,
+      "max_angle_rad": 0.008047964870631053,
+      "rmse_angle_rad": 0.003769553197201388
+    },
+    "official_rotation_control": {
+      "samples": 29,
+      "first_time": 0.698940544,
+      "last_time": 3.498940544,
+      "max_position_m": 0.0004790555638590027,
+      "rmse_position_m": 0.00038827342369534824,
+      "max_angle_rad": 0.010936213341150053,
+      "rmse_angle_rad": 0.005747306266657213
+    },
+    "rust_rotation_clipped": {
+      "samples": 30,
+      "first_time": 0.6,
+      "last_time": 3.5,
+      "max_position_m": 0.0008630112406892508,
+      "rmse_position_m": 0.000384655074586657,
+      "max_angle_rad": 0.011529636795500887,
+      "rmse_angle_rad": 0.0053302717368325335
+    },
+    "official_rotation_clipped": {
+      "samples": 29,
+      "first_time": 0.698940544,
+      "last_time": 3.498940544,
+      "max_position_m": 0.0006561708987733413,
+      "rmse_position_m": 0.00040980407120915386,
+      "max_angle_rad": 0.013475823555333027,
+      "rmse_angle_rad": 0.006909282587014958
+    },
+    "rust_floor": {
+      "samples": 30,
+      "first_time": 0.6,
+      "last_time": 3.5,
+      "max_position_m": 0.0026574378178369482,
+      "rmse_position_m": 0.002394583556730523,
+      "max_angle_rad": 8.625350746395226e-05,
+      "rmse_angle_rad": 4.4930422454120004e-05
+    },
+    "official_floor": {
+      "samples": 29,
+      "first_time": 0.698940544,
+      "last_time": 3.498940544,
+      "max_position_m": 0.25765634528783987,
+      "rmse_position_m": 0.11024041039514845,
+      "max_angle_rad": 0.000303001265798753,
+      "rmse_angle_rad": 7.973695702930321e-05
+    },
+    "rust_recovery": {
+      "samples": 25,
+      "first_time": 0.6,
+      "last_time": 3.0,
+      "max_position_m": 0.008089241043806396,
+      "rmse_position_m": 0.002003657119239437,
+      "max_angle_rad": 4.422156527820358e-05,
+      "rmse_angle_rad": 9.924228842919409e-06
+    },
+    "official_recovery": {
+      "samples": 19,
+      "first_time": 0.698940544,
+      "last_time": 2.998940544,
+      "max_position_m": 0.00031934348446158785,
+      "rmse_position_m": 0.0002641342464980675,
+      "max_angle_rad": 4.140289179653512e-05,
+      "rmse_angle_rad": 2.6048709432143238e-05
+    }
+  },
+  "official_compute_timing_ms": {},
+  "common_frame_trajectories": {
+    "rust_stationary": {
+      "samples": 599,
+      "first_time": 0.7,
+      "last_time": 60.5,
+      "max_position_m": 0.026380036704158012,
+      "rmse_position_m": 0.0035927950953147272,
+      "max_angle_rad": 0.009102876117821318,
+      "rmse_angle_rad": 0.0012716821525042038
+    },
+    "official_stationary": {
+      "samples": 599,
+      "first_time": 0.698900902,
+      "last_time": 60.498900902,
+      "max_position_m": 0.025458504315404782,
+      "rmse_position_m": 0.0035040916590432973,
+      "max_angle_rad": 0.00905488634431315,
+      "rmse_angle_rad": 0.0012898617270286738
+    },
+    "rust_rotation_control": {
+      "samples": 29,
+      "first_time": 0.7,
+      "last_time": 3.5,
+      "max_position_m": 0.000557336750294649,
+      "rmse_position_m": 0.00029748760724167874,
+      "max_angle_rad": 0.008047964870631053,
+      "rmse_angle_rad": 0.0038329414917935164
+    },
+    "official_rotation_control": {
+      "samples": 29,
+      "first_time": 0.698940544,
+      "last_time": 3.498940544,
+      "max_position_m": 0.0004790555638590027,
+      "rmse_position_m": 0.00038827342369534824,
+      "max_angle_rad": 0.010936213341150053,
+      "rmse_angle_rad": 0.005747306266657213
+    },
+    "rust_rotation_clipped": {
+      "samples": 29,
+      "first_time": 0.7,
+      "last_time": 3.5,
+      "max_position_m": 0.0008630112406892508,
+      "rmse_position_m": 0.0003912308513396292,
+      "max_angle_rad": 0.011529636795500887,
+      "rmse_angle_rad": 0.005420649338772769
+    },
+    "official_rotation_clipped": {
+      "samples": 29,
+      "first_time": 0.698940544,
+      "last_time": 3.498940544,
+      "max_position_m": 0.0006561708987733413,
+      "rmse_position_m": 0.00040980407120915386,
+      "max_angle_rad": 0.013475823555333027,
+      "rmse_angle_rad": 0.006909282587014958
+    },
+    "rust_floor": {
+      "samples": 29,
+      "first_time": 0.7,
+      "last_time": 3.5,
+      "max_position_m": 0.0026574378178369482,
+      "rmse_position_m": 0.0024355195742842197,
+      "max_angle_rad": 8.625350746395226e-05,
+      "rmse_angle_rad": 4.569851950260561e-05
+    },
+    "official_floor": {
+      "samples": 29,
+      "first_time": 0.698940544,
+      "last_time": 3.498940544,
+      "max_position_m": 0.25765634528783987,
+      "rmse_position_m": 0.11024041039514845,
+      "max_angle_rad": 0.000303001265798753,
+      "rmse_angle_rad": 7.973695702930321e-05
+    },
+    "rust_recovery": {
+      "samples": 19,
+      "first_time": 0.7,
+      "last_time": 3.0,
+      "max_position_m": 0.000400383982632922,
+      "rmse_position_m": 0.00031457280276256356,
+      "max_angle_rad": 4.422156527820358e-05,
+      "rmse_angle_rad": 1.124158786806884e-05
+    },
+    "official_recovery": {
+      "samples": 19,
+      "first_time": 0.698940544,
+      "last_time": 2.998940544,
+      "max_position_m": 0.00031934348446158785,
+      "rmse_position_m": 0.0002641342464980675,
+      "max_angle_rad": 4.140289179653512e-05,
+      "rmse_angle_rad": 2.6048709432143238e-05
+    }
+  },
+  "common_frame_counts": {
+    "stationary": 599,
+    "rotation_control": 29,
+    "rotation_clipped": 29,
+    "floor": 29,
+    "recovery": 19
+  }
+}

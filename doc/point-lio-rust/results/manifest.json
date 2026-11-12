@@ -1,0 +1,17 @@
+{
+  "point_lio_repository": "https://github.com/hku-mars/Point-LIO",
+  "point_lio_commit": "4b86a469eb5572e70ed575af25b5f15dd06e8e3c",
+  "branch": "point-lio-with-grid-map",
+  "livox_repository": "https://github.com/Livox-SDK/livox_ros_driver",
+  "livox_commit": "3d240d5666129e1a3052e78ee8487a04b08fdda3",
+  "reference_image": "gkd-pointlio-reference:noetic",
+  "reference_image_id": "sha256:7cc60bf4614929d31d4734d6f6604162ab0d7af7c06a79836d4710f540b090d3",
+  "environment": "Ubuntu 20.04, ROS Noetic, GCC 9.4, PCL 1.10; host Intel i5-13500HX",
+  "source_verification": "diff -qr src and include; cmp CMakeLists.txt: identical to official checkout",
+  "rust_timing_ms": {
+    "1000": 26.351,
+    "10000": 258.096,
+    "20000": 509.29
+  },
+  "timing_note": "Rust Instant full process_scan; official internal t5-t0 excludes preprocessing and ROS I/O. Five post-bootstrap samples each; not a strict benchmark."
+}

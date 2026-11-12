@@ -1,0 +1,12 @@
+--- official/src/parameters.cpp
++++ test-copy/src/parameters.cpp
+@@ -105,6 +105,9 @@
+   nh.param<double>("mapping/lidar_meas_cov",laser_point_cov,0.1);
+ 
+   nh.param<float>("mapping/ivox_grid_resolution", ivox_options_.resolution_, 0.2);
++  int comparison_capacity = 1000000;
++  nh.param<int>("comparison_capacity", comparison_capacity, 1000000);
++  ivox_options_.capacity_ = comparison_capacity;
+   nh.param<int>("ivox_nearby_type", ivox_nearby_type, 18);
+   if (ivox_nearby_type == 0) {
+     ivox_options_.nearby_type_ = IVoxType::NearbyType::CENTER;

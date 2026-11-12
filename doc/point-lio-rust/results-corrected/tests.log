@@ -1,0 +1,62 @@
+   Compiling point-lio v0.1.0 (/home/xiayh/gkd/GKD.RoboNav/src/point_lio_rs)
+    Finished `release` profile [optimized] target(s) in 0.47s
+     Running unittests src/lib.rs (target/release/deps/point_lio-88913765d3b4e461)
+
+running 9 tests
+test filter::tests::covariance_does_not_depend_on_lidar_time_subdivision ... ok
+test filter::tests::covariance_stays_psd_and_fixed_extrinsics_stay_fixed ... ok
+test filter::tests::output_filter_matches_official_cpp_oracle ... official_filter_oracle: checkpoints=7, max_abs_error=1.3243746377344934e-14
+ok
+test filter::tests::plane_jacobian_matches_finite_difference ... ok
+test filter::tests::simultaneous_planes_match_analytic_posterior ... ok
+test map::tests::capacity_is_bounded ... ok
+test map::tests::eviction_tracks_last_write_not_first_insertion ... ok
+test map::tests::initial_voxel_keeps_multiple_returns ... ok
+test map::tests::qr_plane_and_degenerate_neighbors ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/fusion.rs (target/release/deps/fusion-2f705f4ba87d272a)
+
+running 11 tests
+test bounded_imu_queue_supports_retry ... ok
+test configuration_and_instance_isolation ... ok
+test imu_gap_is_rejected_without_consuming_data ... ok
+test initialization_checks_motion_and_handles_inverted_imu ... ok
+test lidar_updates_reduce_inertial_drift ... ok
+test moving_room_tracks_per_point_motion_with_extrinsics ... ok
+test rejected_scans_are_transactional_and_retryable ... ok
+test saturation_axes_are_excluded ... ok
+test simultaneous_point_order_does_not_change_posterior ... ok
+test sparse_startup_accumulates_before_map_matching ... ok
+test stationary_room_bootstraps_and_matches ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests/usability.rs (target/release/deps/usability-1012f9dfcf45d28f)
+
+running 6 tests
+test floor_only_does_not_observe_tangential_drift ... floor_degeneracy_3s: x_drift_m=0.771380, z_error_m=0.000000, matches=48283
+ok
+test lidar_returns_after_half_second_without_points ... lidar_recovery: first_matches=1665, final_position_m=0.000418
+ok
+test processing_time_by_scan_size ... ignored, manual release-mode timing measurement
+test rotating_with_clipped_gyro_and_lidar ... clipped_rotation_3s: max_angle_rad=0.011530, control_max_angle_rad=0.008048, rejected_axes=532
+ok
+test sixty_seconds_stationary_default_map_with_sensor_noise ... stationary_60s: capacity=100000, max_position_m=0.026380, max_angle_rad=0.009103, min_matches=999, map=4767
+ok
+test sixty_seconds_stationary_with_sensor_noise ... stationary_60s: capacity=300, max_position_m=1.642475, max_angle_rad=0.305982, min_matches=845, map=907
+
+thread 'sixty_seconds_stationary_with_sensor_noise' (95) panicked at src/point_lio_rs/tests/usability.rs:120:5:
+stationary drift 1.642474849580125 m
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+FAILED
+
+failures:
+
+failures:
+    sixty_seconds_stationary_with_sensor_noise
+
+test result: FAILED. 4 passed; 1 failed; 1 ignored; 0 measured; 0 filtered out; finished in 7.02s
+
+error: test failed, to rerun pass `-p point-lio --test usability`
