@@ -1,0 +1,19 @@
+[WARN] [ros2bag]: Positional "topics" argument deprecated. Please use optional "--topics" argument instead.
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1794472383.423348638] [rosbag2_recorder]: Press SPACE for pausing/resuming
+[INFO] [1794472383.423357820] [rosbag2_recorder]: Event publisher thread: Started
+[INFO] [1794472383.426483876] [rosbag2_recorder]: Starting recording to 'build/lio_static_capture'
+[INFO] [1794472383.430798228] [rosbag2_recorder]: Listening for topics...
+[INFO] [1794472383.430878128] [rosbag2_recorder]: Recording...
+[INFO] [1794472383.430860931] [rosbag2_recorder]: Topics discovery started.
+[INFO] [1794472383.532201272] [rosbag2_recorder]: Subscribed to topic '/point_lio/odometry'
+[INFO] [1794472383.534971261] [rosbag2_recorder]: Subscribed to topic '/point_lio/diagnostics'
+[INFO] [1794472383.538587494] [rosbag2_recorder]: Subscribed to topic '/tf'
+[INFO] [1794472383.538954159] [rosbag2_recorder]: Subscribed to topic '/tf_static'
+[INFO] [1794472385.389020732] [rosbag2_recorder]: Subscribed to topic '/livox/imu'
+[INFO] [1794472385.390184510] [rosbag2_recorder]: Subscribed to topic '/livox/lidar'
+[INFO] [1794472385.390206167] [rosbag2_recorder]: All requested topics are subscribed. Stopping discovery...
+[INFO] [1794472385.390209785] [rosbag2_recorder]: Topics discovery stopped.
+[INFO] [1794472417.448715754] [rosbag2_recorder]: Pausing recording.
+[INFO] [1794472417.449330449] [rosbag2_cpp]: Writing remaining messages from cache to the bag. It may take a while
+[INFO] [1794472417.456739673] [rosbag2_recorder]: Recording stopped
+[INFO] [1794472417.459498200] [rosbag2_recorder]: Event publisher thread: Exited

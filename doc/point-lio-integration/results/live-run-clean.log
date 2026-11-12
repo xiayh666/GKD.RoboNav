@@ -1,0 +1,25 @@
+[INFO] [launch]: All log files can be found below /home/ubuntu/.ros/log/2026-11-12-08-27-29-758839-ros2-jazzy-18971
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [livox_ros_driver2_node-1]: process started with pid [19005]
+[INFO] [point_lio_node-2]: process started with pid [19006]
+[livox_ros_driver2_node-1] [INFO] [1794472049.821204964] [livox_lidar_publisher]: Livox Ros Driver2 Version: 1.2.8
+[livox_ros_driver2_node-1] [INFO] [1794472049.821295151] [livox_lidar_publisher]: Data Source is raw lidar.
+[livox_ros_driver2_node-1] [INFO] [1794472049.821299169] [livox_lidar_publisher]: Config file : /workspace/GKD.RoboNav/install/gkd_nav_bringup/share/gkd_nav_bringup/config/MID360_config.json
+[livox_ros_driver2_node-1] LdsLidar *GetInstance
+[livox_ros_driver2_node-1] config lidar type: 8
+[livox_ros_driver2_node-1] successfully parse base config, counts: 1
+[livox_ros_driver2_node-1] [INFO] [1794472049.821689305] [livox_lidar_publisher]: Init lds lidar success!
+[point_lio_node-2] [INFO] [1794472049.826962200] [point_lio]: Rust Point-LIO ready; hold MID-360 stationary for IMU initialization; stride=2
+[livox_ros_driver2_node-1] GetFreeIndex key:livox_lidar_51161280.
+[livox_ros_driver2_node-1] Init queue, real query size:16.
+[livox_ros_driver2_node-1] Lidar[0] storage queue size: 10
+[livox_ros_driver2_node-1] set pcl data type, handle: 51161280, data type: 1
+[livox_ros_driver2_node-1] set scan pattern, handle: 51161280, scan pattern: 0
+[livox_ros_driver2_node-1] begin to change work mode to 'Normal', handle: 51161280
+[livox_ros_driver2_node-1] successfully set data type, handle: 51161280, set_bit: 2
+[livox_ros_driver2_node-1] successfully set pattern mode, handle: 51161280, set_bit: 0
+[livox_ros_driver2_node-1] successfully set lidar attitude, ip: 192.168.12.3
+[livox_ros_driver2_node-1] successfully change work mode, handle: 51161280
+[livox_ros_driver2_node-1] successfully enable Livox Lidar imu, ip: 192.168.12.3
+[livox_ros_driver2_node-1] [INFO] [1794472052.821873417] [livox_lidar_publisher]: livox/imu publish use imu format
+[livox_ros_driver2_node-1] [INFO] [1794472052.822451241] [livox_lidar_publisher]: livox/lidar publish use livox custom format

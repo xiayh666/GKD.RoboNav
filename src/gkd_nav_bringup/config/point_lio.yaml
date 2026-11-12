@@ -1,0 +1,20 @@
+point_lio:
+  ros__parameters:
+    # Local gravity-aligned odometry of the built-in IMU, not the chassis base_link.
+    odom_frame: odom
+    imu_frame: lio_imu
+    lidar_frame: livox_frame
+    acceleration_scale: 9.81 # This official driver publishes acceleration in g.
+    path_capacity: 3000 # Last ~5 minutes at 10Hz; published at 2Hz.
+    point_stride: 2 # MID-360 ~20k points/frame; keep acquisition times of selected points.
+    min_range: 0.5
+    max_range: 30.0
+    voxel_size: 0.3
+    filter_size_map: 0.3
+    map_capacity: 100000
+    min_matches: 20
+    scan_queue_capacity: 2
+    imu_queue_capacity: 4000
+    # p_imu = R * p_lidar + t; same axes, IMU at [11,23.29,-44.12]mm in LiDAR.
+    lidar_to_imu_translation: [-0.011, -0.02329, 0.04412]
+    lidar_to_imu_quaternion: [0.0, 0.0, 0.0, 1.0]

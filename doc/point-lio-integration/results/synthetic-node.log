@@ -1,0 +1,3 @@
+[INFO] [1794472346.989690681] [point_lio]: Rust Point-LIO ready; hold MID-360 stationary for IMU initialization; stride=2
+[WARN] [1794472351.100297759] [point_lio]: Reset Point-LIO: IMU clock rollback
+[INFO] [1794472354.903895674] [rclcpp]: signal_handler(SIGINT/SIGTERM)

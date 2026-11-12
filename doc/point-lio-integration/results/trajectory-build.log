@@ -1,0 +1,12 @@
+Starting >>> livox_ros_driver2
+Finished <<< livox_ros_driver2 [0.55s]
+Starting >>> point_lio_bridge
+--- stderr: point_lio_bridge
+    Finished `release` profile [optimized] target(s) in 0.03s
+---
+Finished <<< point_lio_bridge [13.2s]
+Starting >>> gkd_nav_bringup
+Finished <<< gkd_nav_bringup [0.06s]
+
+Summary: 3 packages finished [14.0s]
+  1 package had stderr output: point_lio_bridge

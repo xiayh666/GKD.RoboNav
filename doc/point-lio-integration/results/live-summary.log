@@ -1,0 +1,16 @@
+{
+  "observed_s": 30.02574912600039,
+  "poses": 285,
+  "receive_hz": 10.108058147678197,
+  "max_relative_position_m": 0.7558989242883171,
+  "max_relative_angle_rad": 0.12297003664131306,
+  "dynamic_tf_matched": 285,
+  "static_extrinsic_translation": [
+    -0.011,
+    -0.02329,
+    0.04412
+  ],
+  "finite_and_unit_quaternion": true,
+  "monotonic": true,
+  "static_budget_pass": false
+}

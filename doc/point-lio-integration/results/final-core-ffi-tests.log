@@ -1,0 +1,57 @@
+   Compiling point-lio-ffi v0.1.0 (/home/xiayh/gkd/GKD.RoboNav/src/point_lio_bridge)
+    Finished `release` profile [optimized] target(s) in 1.33s
+     Running unittests src/lib.rs (target/release/deps/map_updates-5cff01728845c85d)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/release/deps/point_lio-b5538ca2f6797202)
+
+running 10 tests
+test map::tests::eviction_tracks_last_write_not_first_insertion ... ok
+test map::tests::capacity_is_bounded ... ok
+test map::tests::qr_plane_and_degenerate_neighbors ... ok
+test filter::tests::plane_jacobian_matches_finite_difference ... ok
+test map::tests::insertion_grid_is_independent_of_index_grid ... ok
+test map::tests::initial_voxel_keeps_multiple_returns ... ok
+test filter::tests::simultaneous_planes_match_analytic_posterior ... ok
+test filter::tests::covariance_stays_psd_and_fixed_extrinsics_stay_fixed ... ok
+test filter::tests::covariance_does_not_depend_on_lidar_time_subdivision ... ok
+test filter::tests::output_filter_matches_official_cpp_oracle ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/fusion.rs (target/release/deps/fusion-17a10bcf0fb129b2)
+
+running 11 tests
+test initialization_checks_motion_and_handles_inverted_imu ... ok
+test imu_gap_is_rejected_without_consuming_data ... ok
+test configuration_and_instance_isolation ... ok
+test bounded_imu_queue_supports_retry ... ok
+test saturation_axes_are_excluded ... ok
+test rejected_scans_are_transactional_and_retryable ... ok
+test sparse_startup_accumulates_before_map_matching ... ok
+test stationary_room_bootstraps_and_matches ... ok
+test simultaneous_point_order_does_not_change_posterior ... ok
+test moving_room_tracks_per_point_motion_with_extrinsics ... ok
+test lidar_updates_reduce_inertial_drift ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running unittests src/lib.rs (target/release/deps/point_lio_ffi-64b687718a305691)
+
+running 4 tests
+test tests::c_layout_is_fixed ... ok
+test tests::rejects_invalid_config_and_pointers ... ok
+test tests::initialization_coverage_and_reset ... ok
+test tests::matches_direct_core_with_extrinsics ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/release/deps/terrain_map-830d4170aa588c30)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

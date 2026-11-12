@@ -1,0 +1,8 @@
+Starting >>> point_lio_bridge
+--- stderr: point_lio_bridge
+    Finished `release` profile [optimized] target(s) in 0.05s
+---
+Finished <<< point_lio_bridge [12.1s]
+
+Summary: 1 package finished [12.4s]
+  1 package had stderr output: point_lio_bridge

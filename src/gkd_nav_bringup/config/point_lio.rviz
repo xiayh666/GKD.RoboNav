@@ -1,0 +1,72 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Enabled: true
+  Global Options:
+    Background Color: 40; 40; 40
+    Fixed Frame: odom
+    Frame Rate: 30
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Cell Size: 1
+      Plane Cell Count: 20
+      Reference Frame: odom
+      Color: 150; 150; 150
+      Alpha: 0.4
+    - Class: rviz_default_plugins/Path
+      Name: Motion trajectory
+      Enabled: true
+      Topic:
+        Value: /point_lio/path
+        Depth: 1
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+      Buffer Length: 1
+      Color: 60; 220; 130
+      Alpha: 1
+      Line Style: Lines
+      Line Width: 0.03
+      Pose Style: None
+    - Class: rviz_default_plugins/Odometry
+      Name: Current pose
+      Enabled: true
+      Topic:
+        Value: /point_lio/odometry
+        Depth: 10
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+      Keep: 1
+      Shape: Arrow
+      Color: 255; 180; 60
+      Position Tolerance: 0
+      Angle Tolerance: 0
+    - Class: rviz_default_plugins/TF
+      Name: Sensor frames
+      Enabled: true
+      Show Axes: true
+      Show Arrows: true
+      Show Names: true
+      Marker Scale: 0.3
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 5
+      Focal Point: {X: 0, Y: 0, Z: 0}
+      Pitch: 0.7
+      Yaw: 0.8
+      Target Frame: odom
+Window Geometry:
+  Width: 1400
+  Height: 900

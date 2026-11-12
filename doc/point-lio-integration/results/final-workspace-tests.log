@@ -1,0 +1,77 @@
+   Compiling point-lio-ffi v0.1.0 (/home/xiayh/gkd/GKD.RoboNav/src/point_lio_bridge)
+   Compiling point-lio v0.1.0 (/home/xiayh/gkd/GKD.RoboNav/src/point_lio)
+   Compiling terrain-map v0.1.0 (/home/xiayh/gkd/GKD.RoboNav/src/terrain_map)
+    Finished `release` profile [optimized] target(s) in 1.30s
+     Running unittests src/lib.rs (target/release/deps/map_updates-5cff01728845c85d)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/protocol.rs (target/release/deps/protocol-b5a775450ecc9c5e)
+
+running 2 tests
+test groups_negative_coordinates_and_preserves_reobservations ... ok
+test rejects_invalid_coordinates_times_and_pose ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/release/deps/point_lio-b5538ca2f6797202)
+
+running 10 tests
+test filter::tests::plane_jacobian_matches_finite_difference ... ok
+test map::tests::eviction_tracks_last_write_not_first_insertion ... ok
+test map::tests::capacity_is_bounded ... ok
+test map::tests::initial_voxel_keeps_multiple_returns ... ok
+test map::tests::insertion_grid_is_independent_of_index_grid ... ok
+test map::tests::qr_plane_and_degenerate_neighbors ... ok
+test filter::tests::simultaneous_planes_match_analytic_posterior ... ok
+test filter::tests::covariance_does_not_depend_on_lidar_time_subdivision ... ok
+test filter::tests::output_filter_matches_official_cpp_oracle ... ok
+test filter::tests::covariance_stays_psd_and_fixed_extrinsics_stay_fixed ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/fusion.rs (target/release/deps/fusion-17a10bcf0fb129b2)
+
+running 11 tests
+test configuration_and_instance_isolation ... ok
+test initialization_checks_motion_and_handles_inverted_imu ... ok
+test imu_gap_is_rejected_without_consuming_data ... ok
+test bounded_imu_queue_supports_retry ... ok
+test saturation_axes_are_excluded ... ok
+test rejected_scans_are_transactional_and_retryable ... ok
+test sparse_startup_accumulates_before_map_matching ... ok
+test stationary_room_bootstraps_and_matches ... ok
+test simultaneous_point_order_does_not_change_posterior ... ok
+test moving_room_tracks_per_point_motion_with_extrinsics ... ok
+test lidar_updates_reduce_inertial_drift ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/usability.rs (target/release/deps/usability-dfd70b69d3cce16d)
+
+running 6 tests
+test processing_time_by_scan_size ... ignored, manual release-mode timing measurement
+test lidar_returns_after_half_second_without_points ... ok
+test floor_only_does_not_observe_tangential_drift ... ok
+test rotating_with_clipped_gyro_and_lidar ... ok
+test sixty_seconds_stationary_with_sensor_noise ... FAILED
+test sixty_seconds_stationary_default_map_with_sensor_noise ... ok
+
+failures:
+
+---- sixty_seconds_stationary_with_sensor_noise stdout ----
+stationary_60s: capacity=300, max_position_m=1.642475, max_angle_rad=0.305982, min_matches=845, map=907
+
+thread 'sixty_seconds_stationary_with_sensor_noise' (500303) panicked at src/point_lio/tests/usability.rs:120:5:
+stationary drift 1.642474849580125 m
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    sixty_seconds_stationary_with_sensor_noise
+
+test result: FAILED. 4 passed; 1 failed; 1 ignored; 0 measured; 0 filtered out; finished in 3.39s
+
+error: test failed, to rerun pass `-p point-lio --test usability`

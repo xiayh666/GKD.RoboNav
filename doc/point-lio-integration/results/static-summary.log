@@ -1,0 +1,20 @@
+{
+  "trajectory_messages": 61,
+  "max_trajectory_poses": 289,
+  "sensor_elapsed_s": 31.299806775,
+  "receive_elapsed_s": 28.90015417099994,
+  "observed_s": 30.04169807900007,
+  "poses": 293,
+  "receive_hz": 10.103752328525964,
+  "max_relative_position_m": 0.5834047493810852,
+  "max_relative_angle_rad": 1.0256624430399184,
+  "dynamic_tf_matched": 293,
+  "static_extrinsic_translation": [
+    -0.011,
+    -0.02329,
+    0.04412
+  ],
+  "finite_and_unit_quaternion": true,
+  "monotonic": true,
+  "static_budget_pass": false
+}
