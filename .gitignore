@@ -1,0 +1,52 @@
+# Rust / Cargo build artifacts (keep Cargo.lock for reproducible workspace builds)
+target/
+
+# colcon build, installation and runtime logs, including container-specific trees
+/build/
+/install/
+/log/
+
+# CMake generated files outside the colcon build tree
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# Python tooling and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local agent, cloud, editor and machine configuration
+/.agents/
+/.codex/
+/.aws/
+.idea/
+.vscode/
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Raw sensor recordings and generated point-cloud dumps
+*.bag
+*.bag.active
+*.db3
+*.db3-shm
+*.db3-wal
+*.mcap
+*.pcd
+*.las
+*.laz
+
+# Editor / OS temporary files
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Curated CSV fixtures and validation logs under doc/ are intentionally tracked.
