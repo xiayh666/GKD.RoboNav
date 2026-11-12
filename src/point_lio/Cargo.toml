@@ -1,0 +1,10 @@
+[package]
+name = "point-lio"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.82"
+license = "BSD-3-Clause"
+description = "ROS-independent Rust implementation of Point-LIO's output-state filter"
+
+[dependencies]
+nalgebra = "0.33"

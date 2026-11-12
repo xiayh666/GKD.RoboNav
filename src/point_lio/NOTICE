@@ -1,0 +1,19 @@
+Point-LIO Rust implementation
+
+Algorithm and source reference:
+  hku-mars/Point-LIO, commit 4b86a469eb5572e70ed575af25b5f15dd06e8e3c
+  https://github.com/hku-mars/Point-LIO
+  Developers listed upstream: Dongjiao He and Wei Xu.
+  Paper: Point-LIO: Robust High-Bandwidth Light Detection and Ranging
+  Inertial Odometry, DOI 10.1002/aisy.202200459.
+
+This Rust rewrite follows the output-state dynamics and measurement models.
+The corrected filter separates nominal-state and covariance clocks, groups
+simultaneous observations, and uses the upstream covariance update. The map
+preserves multiple returns per voxel, searches the 26-neighborhood, maintains
+write-LRU order and uses column-pivoted QR fitting. Scope and intentional
+numerical differences are documented in README.md and the correction report.
+It does not link upstream C++ or any third-party ROS port.
+See README.md for the supported scope and validation limits.
+
+The upstream BSD license and attribution are retained in LICENSE.
